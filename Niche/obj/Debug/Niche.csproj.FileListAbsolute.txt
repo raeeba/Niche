@@ -15,4 +15,3 @@ C:\Users\janna\Desktop\Project\Niche\Niche\obj\Debug\Niche.pdb
 C:\Users\janna\Desktop\Project\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_About.resources
 C:\Users\janna\Desktop\Project\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Library.resources
 C:\Users\janna\Desktop\Project\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Testimonies.resources
-C:\Users\janna\Desktop\Project\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Profile.resources

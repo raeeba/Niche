@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.navPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.profileImageButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.homeBtn = new Guna.UI2.WinForms.Guna2Button();
             this.jobsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.testimoniesBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -40,41 +39,26 @@
             this.upperPanel = new System.Windows.Forms.Panel();
             this.footerPanel = new System.Windows.Forms.Panel();
             this.footerLabel = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.navPanel.SuspendLayout();
             this.upperPanel.SuspendLayout();
             this.footerPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
             // 
             this.navPanel.BackColor = System.Drawing.Color.White;
-            this.navPanel.Controls.Add(this.profileImageButton);
+            this.navPanel.Controls.Add(this.guna2CirclePictureBox1);
             this.navPanel.Controls.Add(this.homeBtn);
             this.navPanel.Controls.Add(this.jobsBtn);
             this.navPanel.Controls.Add(this.testimoniesBtn);
             this.navPanel.Controls.Add(this.libraryBtn);
             this.navPanel.Controls.Add(this.aboutBtn);
-            this.navPanel.Location = new System.Drawing.Point(0, 44);
+            this.navPanel.Location = new System.Drawing.Point(0, 38);
             this.navPanel.Name = "navPanel";
-            this.navPanel.Size = new System.Drawing.Size(200, 562);
+            this.navPanel.Size = new System.Drawing.Size(200, 568);
             this.navPanel.TabIndex = 0;
-            // 
-            // profileImageButton
-            // 
-            this.profileImageButton.BackColor = System.Drawing.Color.White;
-            this.profileImageButton.CheckedState.Image = global::Niche.Properties.Resources.CevelineImage08;
-            this.profileImageButton.CheckedState.ImageSize = new System.Drawing.Size(100, 90);
-            this.profileImageButton.HoverState.ImageSize = new System.Drawing.Size(100, 100);
-            this.profileImageButton.Image = global::Niche.Properties.Resources.CevelineImage08;
-            this.profileImageButton.ImageOffset = new System.Drawing.Point(0, 0);
-            this.profileImageButton.ImageRotate = 0F;
-            this.profileImageButton.ImageSize = new System.Drawing.Size(80, 70);
-            this.profileImageButton.Location = new System.Drawing.Point(3, 3);
-            this.profileImageButton.Name = "profileImageButton";
-            this.profileImageButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.profileImageButton.Size = new System.Drawing.Size(197, 94);
-            this.profileImageButton.TabIndex = 0;
-            this.profileImageButton.Click += new System.EventHandler(this.profileImageButton_Click);
             // 
             // homeBtn
             // 
@@ -92,7 +76,7 @@
             this.homeBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.Brown;
             this.homeBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.homeBtn.Location = new System.Drawing.Point(3, 103);
+            this.homeBtn.Location = new System.Drawing.Point(3, 134);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(197, 60);
             this.homeBtn.TabIndex = 1;
@@ -114,7 +98,7 @@
             this.jobsBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jobsBtn.ForeColor = System.Drawing.Color.Brown;
             this.jobsBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.jobsBtn.Location = new System.Drawing.Point(3, 169);
+            this.jobsBtn.Location = new System.Drawing.Point(3, 200);
             this.jobsBtn.Name = "jobsBtn";
             this.jobsBtn.Size = new System.Drawing.Size(197, 60);
             this.jobsBtn.TabIndex = 2;
@@ -135,7 +119,7 @@
             this.testimoniesBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testimoniesBtn.ForeColor = System.Drawing.Color.Brown;
             this.testimoniesBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.testimoniesBtn.Location = new System.Drawing.Point(3, 235);
+            this.testimoniesBtn.Location = new System.Drawing.Point(3, 266);
             this.testimoniesBtn.Name = "testimoniesBtn";
             this.testimoniesBtn.Size = new System.Drawing.Size(197, 60);
             this.testimoniesBtn.TabIndex = 3;
@@ -156,7 +140,7 @@
             this.libraryBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.libraryBtn.ForeColor = System.Drawing.Color.Brown;
             this.libraryBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.libraryBtn.Location = new System.Drawing.Point(3, 301);
+            this.libraryBtn.Location = new System.Drawing.Point(3, 332);
             this.libraryBtn.Name = "libraryBtn";
             this.libraryBtn.Size = new System.Drawing.Size(197, 60);
             this.libraryBtn.TabIndex = 4;
@@ -177,7 +161,7 @@
             this.aboutBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aboutBtn.ForeColor = System.Drawing.Color.Brown;
             this.aboutBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.aboutBtn.Location = new System.Drawing.Point(3, 367);
+            this.aboutBtn.Location = new System.Drawing.Point(3, 398);
             this.aboutBtn.Name = "aboutBtn";
             this.aboutBtn.Size = new System.Drawing.Size(197, 60);
             this.aboutBtn.TabIndex = 5;
@@ -234,6 +218,19 @@
             this.footerLabel.TabIndex = 0;
             this.footerLabel.Text = "2024 Niche";
             // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::Niche.Properties.Resources.image0;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.Padding = new System.Windows.Forms.Padding(15);
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(191, 125);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,6 +249,7 @@
             this.upperPanel.ResumeLayout(false);
             this.footerPanel.ResumeLayout(false);
             this.footerPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -267,9 +265,9 @@
         private Guna.UI2.WinForms.Guna2Button aboutBtn;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Panel upperPanel;
-        private Guna.UI2.WinForms.Guna2ImageButton profileImageButton;
         private System.Windows.Forms.Panel footerPanel;
         private System.Windows.Forms.Label footerLabel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }
 
