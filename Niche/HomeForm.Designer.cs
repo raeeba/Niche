@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.navPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.profileImageButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.homeBtn = new Guna.UI2.WinForms.Guna2Button();
             this.jobsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.testimoniesBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -37,9 +38,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.upperPanel = new System.Windows.Forms.Panel();
-            this.profileImageButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.footerPanel = new System.Windows.Forms.Panel();
+            this.footerLabel = new System.Windows.Forms.Label();
             this.navPanel.SuspendLayout();
             this.upperPanel.SuspendLayout();
+            this.footerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // navPanel
@@ -53,8 +56,25 @@
             this.navPanel.Controls.Add(this.aboutBtn);
             this.navPanel.Location = new System.Drawing.Point(0, 44);
             this.navPanel.Name = "navPanel";
-            this.navPanel.Size = new System.Drawing.Size(200, 540);
+            this.navPanel.Size = new System.Drawing.Size(200, 562);
             this.navPanel.TabIndex = 0;
+            // 
+            // profileImageButton
+            // 
+            this.profileImageButton.BackColor = System.Drawing.Color.White;
+            this.profileImageButton.CheckedState.Image = global::Niche.Properties.Resources.CevelineImage08;
+            this.profileImageButton.CheckedState.ImageSize = new System.Drawing.Size(100, 90);
+            this.profileImageButton.HoverState.ImageSize = new System.Drawing.Size(100, 100);
+            this.profileImageButton.Image = global::Niche.Properties.Resources.CevelineImage08;
+            this.profileImageButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.profileImageButton.ImageRotate = 0F;
+            this.profileImageButton.ImageSize = new System.Drawing.Size(80, 70);
+            this.profileImageButton.Location = new System.Drawing.Point(3, 3);
+            this.profileImageButton.Name = "profileImageButton";
+            this.profileImageButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.profileImageButton.Size = new System.Drawing.Size(197, 94);
+            this.profileImageButton.TabIndex = 0;
+            this.profileImageButton.Click += new System.EventHandler(this.profileImageButton_Click);
             // 
             // homeBtn
             // 
@@ -180,7 +200,7 @@
             this.panelContainer.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panelContainer.Location = new System.Drawing.Point(200, 38);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(769, 549);
+            this.panelContainer.Size = new System.Drawing.Size(769, 558);
             this.panelContainer.TabIndex = 1;
             // 
             // upperPanel
@@ -193,29 +213,34 @@
             this.upperPanel.Size = new System.Drawing.Size(971, 41);
             this.upperPanel.TabIndex = 2;
             // 
-            // profileImageButton
+            // footerPanel
             // 
-            this.profileImageButton.BackColor = System.Drawing.Color.White;
-            this.profileImageButton.CheckedState.Image = global::Niche.Properties.Resources.CevelineImage08;
-            this.profileImageButton.CheckedState.ImageSize = new System.Drawing.Size(100, 90);
-            this.profileImageButton.HoverState.ImageSize = new System.Drawing.Size(100, 100);
-            this.profileImageButton.Image = global::Niche.Properties.Resources.CevelineImage08;
-            this.profileImageButton.ImageOffset = new System.Drawing.Point(0, 0);
-            this.profileImageButton.ImageRotate = 0F;
-            this.profileImageButton.ImageSize = new System.Drawing.Size(80, 70);
-            this.profileImageButton.Location = new System.Drawing.Point(3, 3);
-            this.profileImageButton.Name = "profileImageButton";
-            this.profileImageButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.profileImageButton.Size = new System.Drawing.Size(197, 94);
-            this.profileImageButton.TabIndex = 0;
-            this.profileImageButton.Click += new System.EventHandler(this.profileImageButton_Click);
+            this.footerPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.footerPanel.Controls.Add(this.footerLabel);
+            this.footerPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.footerPanel.Location = new System.Drawing.Point(0, 589);
+            this.footerPanel.Name = "footerPanel";
+            this.footerPanel.Size = new System.Drawing.Size(971, 29);
+            this.footerPanel.TabIndex = 3;
+            // 
+            // footerLabel
+            // 
+            this.footerLabel.AutoSize = true;
+            this.footerLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.footerLabel.ForeColor = System.Drawing.Color.Salmon;
+            this.footerLabel.Location = new System.Drawing.Point(432, 10);
+            this.footerLabel.Name = "footerLabel";
+            this.footerLabel.Size = new System.Drawing.Size(74, 16);
+            this.footerLabel.TabIndex = 0;
+            this.footerLabel.Text = "2024 Niche";
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(971, 582);
+            this.ClientSize = new System.Drawing.Size(971, 618);
+            this.Controls.Add(this.footerPanel);
             this.Controls.Add(this.upperPanel);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.navPanel);
@@ -225,6 +250,8 @@
             this.Text = "HOME";
             this.navPanel.ResumeLayout(false);
             this.upperPanel.ResumeLayout(false);
+            this.footerPanel.ResumeLayout(false);
+            this.footerPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -241,6 +268,8 @@
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Panel upperPanel;
         private Guna.UI2.WinForms.Guna2ImageButton profileImageButton;
+        private System.Windows.Forms.Panel footerPanel;
+        private System.Windows.Forms.Label footerLabel;
     }
 }
 
