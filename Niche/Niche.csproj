@@ -84,6 +84,12 @@
     <Compile Include="UserControlPages\UC-Library.Designer.cs">
       <DependentUpon>UC-Library.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlPages\UC-Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPages\UC-Login.Designer.cs">
+      <DependentUpon>UC-Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlPages\UC-Testimonies.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlPages\UC-Library.resx">
       <DependentUpon>UC-Library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPages\UC-Login.resx">
+      <DependentUpon>UC-Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlPages\UC-Testimonies.resx">
       <DependentUpon>UC-Testimonies.cs</DependentUpon>

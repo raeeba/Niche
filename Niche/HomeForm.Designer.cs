@@ -39,17 +39,16 @@
             this.upperPanel = new System.Windows.Forms.Panel();
             this.footerPanel = new System.Windows.Forms.Panel();
             this.footerLabel = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.loginRegisterBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.navPanel.SuspendLayout();
             this.upperPanel.SuspendLayout();
             this.footerPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
             // 
             this.navPanel.BackColor = System.Drawing.Color.White;
-            this.navPanel.Controls.Add(this.guna2CirclePictureBox1);
+            this.navPanel.Controls.Add(this.loginRegisterBtn);
             this.navPanel.Controls.Add(this.homeBtn);
             this.navPanel.Controls.Add(this.jobsBtn);
             this.navPanel.Controls.Add(this.testimoniesBtn);
@@ -76,7 +75,7 @@
             this.homeBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.Brown;
             this.homeBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.homeBtn.Location = new System.Drawing.Point(3, 134);
+            this.homeBtn.Location = new System.Drawing.Point(3, 105);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(197, 60);
             this.homeBtn.TabIndex = 1;
@@ -98,7 +97,7 @@
             this.jobsBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jobsBtn.ForeColor = System.Drawing.Color.Brown;
             this.jobsBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.jobsBtn.Location = new System.Drawing.Point(3, 200);
+            this.jobsBtn.Location = new System.Drawing.Point(3, 171);
             this.jobsBtn.Name = "jobsBtn";
             this.jobsBtn.Size = new System.Drawing.Size(197, 60);
             this.jobsBtn.TabIndex = 2;
@@ -119,7 +118,7 @@
             this.testimoniesBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testimoniesBtn.ForeColor = System.Drawing.Color.Brown;
             this.testimoniesBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.testimoniesBtn.Location = new System.Drawing.Point(3, 266);
+            this.testimoniesBtn.Location = new System.Drawing.Point(3, 237);
             this.testimoniesBtn.Name = "testimoniesBtn";
             this.testimoniesBtn.Size = new System.Drawing.Size(197, 60);
             this.testimoniesBtn.TabIndex = 3;
@@ -140,7 +139,7 @@
             this.libraryBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.libraryBtn.ForeColor = System.Drawing.Color.Brown;
             this.libraryBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.libraryBtn.Location = new System.Drawing.Point(3, 332);
+            this.libraryBtn.Location = new System.Drawing.Point(3, 303);
             this.libraryBtn.Name = "libraryBtn";
             this.libraryBtn.Size = new System.Drawing.Size(197, 60);
             this.libraryBtn.TabIndex = 4;
@@ -161,7 +160,7 @@
             this.aboutBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aboutBtn.ForeColor = System.Drawing.Color.Brown;
             this.aboutBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.aboutBtn.Location = new System.Drawing.Point(3, 398);
+            this.aboutBtn.Location = new System.Drawing.Point(3, 369);
             this.aboutBtn.Name = "aboutBtn";
             this.aboutBtn.Size = new System.Drawing.Size(197, 60);
             this.aboutBtn.TabIndex = 5;
@@ -218,18 +217,20 @@
             this.footerLabel.TabIndex = 0;
             this.footerLabel.Text = "2024 Niche";
             // 
-            // guna2CirclePictureBox1
+            // loginRegisterBtn
             // 
-            this.guna2CirclePictureBox1.Image = global::Niche.Properties.Resources.image0;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.Padding = new System.Windows.Forms.Padding(15);
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(191, 125);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.loginRegisterBtn.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.loginRegisterBtn.HoverState.ImageSize = new System.Drawing.Size(100, 70);
+            this.loginRegisterBtn.Image = global::Niche.Properties.Resources.image0;
+            this.loginRegisterBtn.ImageOffset = new System.Drawing.Point(0, 0);
+            this.loginRegisterBtn.ImageRotate = 0F;
+            this.loginRegisterBtn.ImageSize = new System.Drawing.Size(90, 70);
+            this.loginRegisterBtn.Location = new System.Drawing.Point(3, 3);
+            this.loginRegisterBtn.Name = "loginRegisterBtn";
+            this.loginRegisterBtn.PressedState.ImageSize = new System.Drawing.Size(90, 90);
+            this.loginRegisterBtn.Size = new System.Drawing.Size(197, 96);
+            this.loginRegisterBtn.TabIndex = 0;
+            this.loginRegisterBtn.Click += new System.EventHandler(this.loginRegisterBtn_Click);
             // 
             // HomeForm
             // 
@@ -249,7 +250,6 @@
             this.upperPanel.ResumeLayout(false);
             this.footerPanel.ResumeLayout(false);
             this.footerPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -267,7 +267,7 @@
         private System.Windows.Forms.Panel upperPanel;
         private System.Windows.Forms.Panel footerPanel;
         private System.Windows.Forms.Label footerLabel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2ImageButton loginRegisterBtn;
     }
 }
 

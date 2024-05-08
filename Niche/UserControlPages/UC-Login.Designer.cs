@@ -1,6 +1,6 @@
 ﻿namespace Niche.UserControlPages
 {
-    partial class UC_Home
+    partial class UC_Login
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,18 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.usernameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // UC_Home
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Location = new System.Drawing.Point(131, 80);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(75, 16);
+            this.usernameLabel.TabIndex = 0;
+            this.usernameLabel.Text = "Username:";
+            // 
+            // UC_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UC_Home";
-            this.Size = new System.Drawing.Size(769, 549);
+            this.Controls.Add(this.usernameLabel);
+            this.Name = "UC_Login";
+            this.Size = new System.Drawing.Size(767, 547);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label usernameLabel;
     }
 }

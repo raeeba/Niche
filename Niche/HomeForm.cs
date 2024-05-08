@@ -26,6 +26,14 @@ namespace Niche
             panelContainer.Controls.Add(userControl);
             userControl.BringToFront();
         }
+        private void clearChecked()
+        {
+            homeBtn.Checked = false;
+            jobsBtn.Checked = false;
+            testimoniesBtn.Checked = false;
+            libraryBtn.Checked = false;
+            aboutBtn.Checked = false;
+        }
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
@@ -56,6 +64,14 @@ namespace Niche
         {
             UC_About uC_About = new UC_About();
             addUserControl(uC_About);
+        }
+
+        private void loginRegisterBtn_Click(object sender, EventArgs e)
+        {
+            UC_Login uC_Login = new UC_Login();
+            addUserControl(uC_Login);
+            clearChecked();
+
         }
     }
 }
