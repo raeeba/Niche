@@ -28,20 +28,219 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.navPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.homeBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.jobsBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.testimoniesBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.libraryBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.aboutBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.upperPanel = new System.Windows.Forms.Panel();
+            this.profileImageButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.navPanel.SuspendLayout();
+            this.upperPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // navPanel
+            // 
+            this.navPanel.BackColor = System.Drawing.Color.White;
+            this.navPanel.Controls.Add(this.profileImageButton);
+            this.navPanel.Controls.Add(this.homeBtn);
+            this.navPanel.Controls.Add(this.jobsBtn);
+            this.navPanel.Controls.Add(this.testimoniesBtn);
+            this.navPanel.Controls.Add(this.libraryBtn);
+            this.navPanel.Controls.Add(this.aboutBtn);
+            this.navPanel.Location = new System.Drawing.Point(0, 44);
+            this.navPanel.Name = "navPanel";
+            this.navPanel.Size = new System.Drawing.Size(200, 540);
+            this.navPanel.TabIndex = 0;
+            // 
+            // homeBtn
+            // 
+            this.homeBtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.homeBtn.Checked = true;
+            this.homeBtn.CheckedState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.homeBtn.CheckedState.FillColor = System.Drawing.Color.Gainsboro;
+            this.homeBtn.CustomBorderColor = System.Drawing.Color.White;
+            this.homeBtn.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.homeBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.homeBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.homeBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.homeBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.homeBtn.FillColor = System.Drawing.Color.White;
+            this.homeBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeBtn.ForeColor = System.Drawing.Color.Brown;
+            this.homeBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.homeBtn.Location = new System.Drawing.Point(3, 103);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Size = new System.Drawing.Size(197, 60);
+            this.homeBtn.TabIndex = 1;
+            this.homeBtn.Text = "HOME";
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
+            // 
+            // jobsBtn
+            // 
+            this.jobsBtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.jobsBtn.CheckedState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.jobsBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.jobsBtn.CustomBorderColor = System.Drawing.Color.White;
+            this.jobsBtn.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.jobsBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.jobsBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.jobsBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.jobsBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.jobsBtn.FillColor = System.Drawing.Color.White;
+            this.jobsBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jobsBtn.ForeColor = System.Drawing.Color.Brown;
+            this.jobsBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.jobsBtn.Location = new System.Drawing.Point(3, 169);
+            this.jobsBtn.Name = "jobsBtn";
+            this.jobsBtn.Size = new System.Drawing.Size(197, 60);
+            this.jobsBtn.TabIndex = 2;
+            this.jobsBtn.Text = "JOBS";
+            this.jobsBtn.Click += new System.EventHandler(this.jobsBtn_Click);
+            // 
+            // testimoniesBtn
+            // 
+            this.testimoniesBtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.testimoniesBtn.CheckedState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.testimoniesBtn.CustomBorderColor = System.Drawing.Color.White;
+            this.testimoniesBtn.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.testimoniesBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.testimoniesBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.testimoniesBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.testimoniesBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.testimoniesBtn.FillColor = System.Drawing.Color.White;
+            this.testimoniesBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testimoniesBtn.ForeColor = System.Drawing.Color.Brown;
+            this.testimoniesBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.testimoniesBtn.Location = new System.Drawing.Point(3, 235);
+            this.testimoniesBtn.Name = "testimoniesBtn";
+            this.testimoniesBtn.Size = new System.Drawing.Size(197, 60);
+            this.testimoniesBtn.TabIndex = 3;
+            this.testimoniesBtn.Text = "TESTIMONIES";
+            this.testimoniesBtn.Click += new System.EventHandler(this.testimoniesBtn_Click);
+            // 
+            // libraryBtn
+            // 
+            this.libraryBtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.libraryBtn.CheckedState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.libraryBtn.CustomBorderColor = System.Drawing.Color.White;
+            this.libraryBtn.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.libraryBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.libraryBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.libraryBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.libraryBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.libraryBtn.FillColor = System.Drawing.Color.White;
+            this.libraryBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libraryBtn.ForeColor = System.Drawing.Color.Brown;
+            this.libraryBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.libraryBtn.Location = new System.Drawing.Point(3, 301);
+            this.libraryBtn.Name = "libraryBtn";
+            this.libraryBtn.Size = new System.Drawing.Size(197, 60);
+            this.libraryBtn.TabIndex = 4;
+            this.libraryBtn.Text = "LIBRARY";
+            this.libraryBtn.Click += new System.EventHandler(this.libraryBtn_Click);
+            // 
+            // aboutBtn
+            // 
+            this.aboutBtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.aboutBtn.CheckedState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.aboutBtn.CustomBorderColor = System.Drawing.Color.White;
+            this.aboutBtn.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.aboutBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.aboutBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.aboutBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.aboutBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.aboutBtn.FillColor = System.Drawing.Color.White;
+            this.aboutBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aboutBtn.ForeColor = System.Drawing.Color.Brown;
+            this.aboutBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.aboutBtn.Location = new System.Drawing.Point(3, 367);
+            this.aboutBtn.Name = "aboutBtn";
+            this.aboutBtn.Size = new System.Drawing.Size(197, 60);
+            this.aboutBtn.TabIndex = 5;
+            this.aboutBtn.Text = "ABOUT";
+            this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Salmon;
+            this.label1.Location = new System.Drawing.Point(30, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 41);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "NICHE";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelContainer.Location = new System.Drawing.Point(200, 38);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(769, 549);
+            this.panelContainer.TabIndex = 1;
+            // 
+            // upperPanel
+            // 
+            this.upperPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.upperPanel.Controls.Add(this.label1);
+            this.upperPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.upperPanel.Location = new System.Drawing.Point(0, 0);
+            this.upperPanel.Name = "upperPanel";
+            this.upperPanel.Size = new System.Drawing.Size(971, 41);
+            this.upperPanel.TabIndex = 2;
+            // 
+            // profileImageButton
+            // 
+            this.profileImageButton.BackColor = System.Drawing.Color.White;
+            this.profileImageButton.CheckedState.Image = global::Niche.Properties.Resources.CevelineImage08;
+            this.profileImageButton.CheckedState.ImageSize = new System.Drawing.Size(100, 90);
+            this.profileImageButton.HoverState.ImageSize = new System.Drawing.Size(100, 100);
+            this.profileImageButton.Image = global::Niche.Properties.Resources.CevelineImage08;
+            this.profileImageButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.profileImageButton.ImageRotate = 0F;
+            this.profileImageButton.ImageSize = new System.Drawing.Size(80, 70);
+            this.profileImageButton.Location = new System.Drawing.Point(3, 3);
+            this.profileImageButton.Name = "profileImageButton";
+            this.profileImageButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.profileImageButton.Size = new System.Drawing.Size(197, 94);
+            this.profileImageButton.TabIndex = 0;
+            this.profileImageButton.Click += new System.EventHandler(this.profileImageButton_Click);
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(971, 582);
+            this.Controls.Add(this.upperPanel);
+            this.Controls.Add(this.panelContainer);
+            this.Controls.Add(this.navPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomeForm";
-            this.Text = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "HOME";
+            this.navPanel.ResumeLayout(false);
+            this.upperPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel navPanel;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button homeBtn;
+        private Guna.UI2.WinForms.Guna2Button jobsBtn;
+        private Guna.UI2.WinForms.Guna2Button testimoniesBtn;
+        private Guna.UI2.WinForms.Guna2Button libraryBtn;
+        private Guna.UI2.WinForms.Guna2Button aboutBtn;
+        private System.Windows.Forms.Panel panelContainer;
+        private System.Windows.Forms.Panel upperPanel;
+        private Guna.UI2.WinForms.Guna2ImageButton profileImageButton;
     }
 }
 
