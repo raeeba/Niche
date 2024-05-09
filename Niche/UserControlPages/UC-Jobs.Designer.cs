@@ -79,9 +79,9 @@
             this.jobPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.jobPanel.Controls.Add(this.guna2Button2);
             this.jobPanel.FillColor = System.Drawing.Color.Gainsboro;
-            this.jobPanel.Location = new System.Drawing.Point(3, 131);
+            this.jobPanel.Location = new System.Drawing.Point(-1, 131);
             this.jobPanel.Name = "jobPanel";
-            this.jobPanel.Size = new System.Drawing.Size(761, 100);
+            this.jobPanel.Size = new System.Drawing.Size(765, 100);
             this.jobPanel.TabIndex = 2;
             // 
             // guna2Button2
