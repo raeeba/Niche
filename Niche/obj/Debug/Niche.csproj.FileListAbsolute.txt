@@ -34,3 +34,5 @@ C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\Final Project\N
 C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\Final Project\Niche\Niche\obj\Debug\Niche.csproj.CopyComplete
 C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\Final Project\Niche\Niche\obj\Debug\Niche.exe
 C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\Final Project\Niche\Niche\obj\Debug\Niche.pdb
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\Final Project\Niche\Niche\bin\Debug\NicheDB.mdf
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\Final Project\Niche\Niche\bin\Debug\NicheDB_log.ldf
