@@ -32,9 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Jobs));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.jobsGuna2DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.jobsDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,7 +59,7 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.jobsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.jobsGuna2DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nicheDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobsBindingNavigator)).BeginInit();
@@ -70,28 +71,27 @@
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.Controls.Add(this.jobsGuna2DataGridView);
+            this.guna2Panel1.Controls.Add(this.jobsDataGridView);
             this.guna2Panel1.Location = new System.Drawing.Point(12, 16);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(746, 517);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // jobsGuna2DataGridView
+            // jobsDataGridView
             // 
-            this.jobsGuna2DataGridView.AllowUserToAddRows = false;
-            this.jobsGuna2DataGridView.AllowUserToDeleteRows = false;
-            this.jobsGuna2DataGridView.AllowUserToResizeColumns = false;
-            this.jobsGuna2DataGridView.AllowUserToResizeRows = false;
+            this.jobsDataGridView.AllowUserToAddRows = false;
+            this.jobsDataGridView.AllowUserToDeleteRows = false;
+            this.jobsDataGridView.AllowUserToResizeColumns = false;
+            this.jobsDataGridView.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Brown;
-            this.jobsGuna2DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.jobsGuna2DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.jobsDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.jobsDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.jobsGuna2DataGridView.AutoGenerateColumns = false;
-            this.jobsGuna2DataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.jobsGuna2DataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.jobsDataGridView.AutoGenerateColumns = false;
+            this.jobsDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.IndianRed;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,51 +99,59 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.IndianRed;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.jobsGuna2DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.jobsGuna2DataGridView.ColumnHeadersHeight = 40;
-            this.jobsGuna2DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.jobsGuna2DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.jobsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.jobsDataGridView.ColumnHeadersHeight = 40;
+            this.jobsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.jobsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.jobsGuna2DataGridView.DataSource = this.jobsBindingSource;
+            this.jobsDataGridView.DataSource = this.jobsBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.jobsGuna2DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.jobsGuna2DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.jobsGuna2DataGridView.Location = new System.Drawing.Point(3, 77);
-            this.jobsGuna2DataGridView.Name = "jobsGuna2DataGridView";
-            this.jobsGuna2DataGridView.RowHeadersVisible = false;
-            this.jobsGuna2DataGridView.Size = new System.Drawing.Size(740, 437);
-            this.jobsGuna2DataGridView.TabIndex = 0;
-            this.jobsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.jobsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.jobsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.jobsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.jobsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.jobsGuna2DataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.jobsGuna2DataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.jobsGuna2DataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.jobsGuna2DataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.jobsGuna2DataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jobsGuna2DataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.jobsGuna2DataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.jobsGuna2DataGridView.ThemeStyle.HeaderStyle.Height = 40;
-            this.jobsGuna2DataGridView.ThemeStyle.ReadOnly = false;
-            this.jobsGuna2DataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.jobsGuna2DataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.jobsGuna2DataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jobsGuna2DataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.jobsGuna2DataGridView.ThemeStyle.RowsStyle.Height = 22;
-            this.jobsGuna2DataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.jobsGuna2DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.jobsDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.jobsDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.jobsDataGridView.Location = new System.Drawing.Point(3, 77);
+            this.jobsDataGridView.Name = "jobsDataGridView";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.jobsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.jobsDataGridView.RowHeadersVisible = false;
+            this.jobsDataGridView.Size = new System.Drawing.Size(740, 437);
+            this.jobsDataGridView.TabIndex = 0;
+            this.jobsDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.jobsDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.jobsDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.jobsDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.jobsDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.jobsDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.jobsDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.jobsDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.jobsDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.jobsDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jobsDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.jobsDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.jobsDataGridView.ThemeStyle.HeaderStyle.Height = 40;
+            this.jobsDataGridView.ThemeStyle.ReadOnly = false;
+            this.jobsDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.jobsDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.jobsDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jobsDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.jobsDataGridView.ThemeStyle.RowsStyle.Height = 22;
+            this.jobsDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.jobsDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -331,7 +339,7 @@
             this.Name = "UC_Jobs";
             this.Size = new System.Drawing.Size(773, 547);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.jobsGuna2DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nicheDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobsBindingNavigator)).EndInit();
@@ -362,7 +370,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton jobsBindingNavigatorSaveItem;
-        private Guna.UI2.WinForms.Guna2DataGridView jobsGuna2DataGridView;
+        private Guna.UI2.WinForms.Guna2DataGridView jobsDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;

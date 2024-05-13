@@ -15,6 +15,21 @@ namespace Niche.UserControlPages
         public UC_Jobs()
         {
             InitializeComponent();
+            ApplyPaddingToCells();
+
+        }
+        private void ApplyPaddingToCells()
+        {
+            int paddingSpace = 10; // Adjust the padding space as needed
+
+            // Apply padding to all cells
+            foreach (DataGridViewRow row in jobsDataGridView.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    cell.Style.Padding = new Padding(paddingSpace);
+                }
+            }
         }
 
         private void jobsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -46,5 +61,7 @@ namespace Niche.UserControlPages
             }
         }
 
+
+       
     }
 }
