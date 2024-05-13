@@ -16,5 +16,35 @@ namespace Niche.UserControlPages
         {
             InitializeComponent();
         }
+
+        private void jobsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.jobsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.nicheDataSet);
+
+        }
+
+        private void jobsBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.jobsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.nicheDataSet);
+
+        }
+        public void LoadData()
+        {
+            try
+            {
+                // Your code to populate the dataset with data from the database
+                // For example:
+                this.jobsTableAdapter.Fill(this.nicheDataSet.Jobs);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading data: " + ex.Message);
+            }
+        }
+
     }
 }

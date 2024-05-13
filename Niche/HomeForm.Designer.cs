@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.navPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.loginRegisterBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.homeBtn = new Guna.UI2.WinForms.Guna2Button();
             this.jobsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.testimoniesBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -39,7 +40,6 @@
             this.upperPanel = new System.Windows.Forms.Panel();
             this.footerPanel = new System.Windows.Forms.Panel();
             this.footerLabel = new System.Windows.Forms.Label();
-            this.loginRegisterBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.navPanel.SuspendLayout();
             this.upperPanel.SuspendLayout();
             this.footerPanel.SuspendLayout();
@@ -58,6 +58,21 @@
             this.navPanel.Name = "navPanel";
             this.navPanel.Size = new System.Drawing.Size(200, 568);
             this.navPanel.TabIndex = 0;
+            // 
+            // loginRegisterBtn
+            // 
+            this.loginRegisterBtn.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.loginRegisterBtn.HoverState.ImageSize = new System.Drawing.Size(100, 70);
+            this.loginRegisterBtn.Image = global::Niche.Properties.Resources.image0;
+            this.loginRegisterBtn.ImageOffset = new System.Drawing.Point(0, 0);
+            this.loginRegisterBtn.ImageRotate = 0F;
+            this.loginRegisterBtn.ImageSize = new System.Drawing.Size(90, 70);
+            this.loginRegisterBtn.Location = new System.Drawing.Point(3, 3);
+            this.loginRegisterBtn.Name = "loginRegisterBtn";
+            this.loginRegisterBtn.PressedState.ImageSize = new System.Drawing.Size(90, 90);
+            this.loginRegisterBtn.Size = new System.Drawing.Size(197, 96);
+            this.loginRegisterBtn.TabIndex = 0;
+            this.loginRegisterBtn.Click += new System.EventHandler(this.loginRegisterBtn_Click);
             // 
             // homeBtn
             // 
@@ -216,21 +231,6 @@
             this.footerLabel.Size = new System.Drawing.Size(74, 16);
             this.footerLabel.TabIndex = 0;
             this.footerLabel.Text = "2024 Niche";
-            // 
-            // loginRegisterBtn
-            // 
-            this.loginRegisterBtn.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.loginRegisterBtn.HoverState.ImageSize = new System.Drawing.Size(100, 70);
-            this.loginRegisterBtn.Image = global::Niche.Properties.Resources.image0;
-            this.loginRegisterBtn.ImageOffset = new System.Drawing.Point(0, 0);
-            this.loginRegisterBtn.ImageRotate = 0F;
-            this.loginRegisterBtn.ImageSize = new System.Drawing.Size(90, 70);
-            this.loginRegisterBtn.Location = new System.Drawing.Point(3, 3);
-            this.loginRegisterBtn.Name = "loginRegisterBtn";
-            this.loginRegisterBtn.PressedState.ImageSize = new System.Drawing.Size(90, 90);
-            this.loginRegisterBtn.Size = new System.Drawing.Size(197, 96);
-            this.loginRegisterBtn.TabIndex = 0;
-            this.loginRegisterBtn.Click += new System.EventHandler(this.loginRegisterBtn_Click);
             // 
             // HomeForm
             // 

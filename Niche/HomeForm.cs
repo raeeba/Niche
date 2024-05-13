@@ -18,13 +18,20 @@ namespace Niche
             InitializeComponent();
             UC_Home uC_Home = new UC_Home();
             addUserControl(uC_Home);
+           // LoadData();
         }
+        
         private void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
             panelContainer.Controls.Clear();
             panelContainer.Controls.Add(userControl);
             userControl.BringToFront();
+            if (userControl is UC_Jobs)
+            {
+                UC_Jobs uC_Jobs = userControl as UC_Jobs;
+                uC_Jobs.LoadData();
+            }
         }
         private void clearChecked()
         {
@@ -46,6 +53,9 @@ namespace Niche
         {
             UC_Jobs uC_Jobs = new UC_Jobs();
             addUserControl(uC_Jobs);
+            uC_Jobs.Dock = DockStyle.Fill;
+            // Call the LoadData method to load data into the dataset
+            uC_Jobs.LoadData();
         }
 
         private void testimoniesBtn_Click(object sender, EventArgs e)
@@ -71,6 +81,14 @@ namespace Niche
             UC_Login uC_Login = new UC_Login();
             addUserControl(uC_Login);
             clearChecked();
+
+        }
+
+        private void jobsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            //this.jobsBindingSource.EndEdit();
+            //this.tableAdapterManager.UpdateAll(this.nicheDataSet);
 
         }
     }
