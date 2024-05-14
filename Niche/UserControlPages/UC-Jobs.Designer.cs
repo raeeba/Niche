@@ -29,12 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Jobs));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.showAllButton = new Guna.UI2.WinForms.Guna2Button();
+            this.searchButton = new Guna.UI2.WinForms.Guna2Button();
+            this.salaryTrackBarLabel = new System.Windows.Forms.Label();
+            this.jobsFormLabel = new System.Windows.Forms.Label();
+            this.midSalaryLabel = new System.Windows.Forms.Label();
+            this.maxSalaryLabel = new System.Windows.Forms.Label();
+            this.minSalaryLabel = new System.Windows.Forms.Label();
+            this.salaryTrackBar = new Guna.UI2.WinForms.Guna2TrackBar();
+            this.searchJobsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.searchLabel = new System.Windows.Forms.Label();
             this.jobsDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +53,6 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jobsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nicheDataSet = new Niche.NicheDataSet();
-            this.jobsTableAdapter = new Niche.NicheDataSetTableAdapters.JobsTableAdapter();
-            this.tableAdapterManager = new Niche.NicheDataSetTableAdapters.TableAdapterManager();
             this.jobsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -58,6 +66,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.jobsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.jobsTableAdapter = new Niche.NicheDataSetTableAdapters.JobsTableAdapter();
+            this.tableAdapterManager = new Niche.NicheDataSetTableAdapters.TableAdapterManager();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.jobsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobsBindingSource)).BeginInit();
@@ -71,11 +81,146 @@
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel1.Controls.Add(this.showAllButton);
+            this.guna2Panel1.Controls.Add(this.searchButton);
+            this.guna2Panel1.Controls.Add(this.salaryTrackBarLabel);
+            this.guna2Panel1.Controls.Add(this.jobsFormLabel);
+            this.guna2Panel1.Controls.Add(this.midSalaryLabel);
+            this.guna2Panel1.Controls.Add(this.maxSalaryLabel);
+            this.guna2Panel1.Controls.Add(this.minSalaryLabel);
+            this.guna2Panel1.Controls.Add(this.salaryTrackBar);
+            this.guna2Panel1.Controls.Add(this.searchJobsTextBox);
+            this.guna2Panel1.Controls.Add(this.searchLabel);
             this.guna2Panel1.Controls.Add(this.jobsDataGridView);
             this.guna2Panel1.Location = new System.Drawing.Point(12, 16);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(746, 517);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // showAllButton
+            // 
+            this.showAllButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.showAllButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.showAllButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.showAllButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.showAllButton.FillColor = System.Drawing.Color.LightCoral;
+            this.showAllButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.showAllButton.ForeColor = System.Drawing.Color.White;
+            this.showAllButton.Location = new System.Drawing.Point(296, 487);
+            this.showAllButton.Name = "showAllButton";
+            this.showAllButton.Size = new System.Drawing.Size(145, 30);
+            this.showAllButton.TabIndex = 12;
+            this.showAllButton.Text = "Show &All";
+            this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
+            // 
+            // searchButton
+            // 
+            this.searchButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.searchButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.searchButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.searchButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.searchButton.FillColor = System.Drawing.Color.LightCoral;
+            this.searchButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.searchButton.ForeColor = System.Drawing.Color.White;
+            this.searchButton.Location = new System.Drawing.Point(273, 61);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 22);
+            this.searchButton.TabIndex = 11;
+            this.searchButton.Text = "&Search";
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // salaryTrackBarLabel
+            // 
+            this.salaryTrackBarLabel.AutoSize = true;
+            this.salaryTrackBarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salaryTrackBarLabel.Location = new System.Drawing.Point(526, 88);
+            this.salaryTrackBarLabel.Name = "salaryTrackBarLabel";
+            this.salaryTrackBarLabel.Size = new System.Drawing.Size(42, 13);
+            this.salaryTrackBarLabel.TabIndex = 10;
+            this.salaryTrackBarLabel.Text = "Salary";
+            // 
+            // jobsFormLabel
+            // 
+            this.jobsFormLabel.AutoSize = true;
+            this.jobsFormLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jobsFormLabel.Location = new System.Drawing.Point(8, 14);
+            this.jobsFormLabel.Name = "jobsFormLabel";
+            this.jobsFormLabel.Size = new System.Drawing.Size(69, 25);
+            this.jobsFormLabel.TabIndex = 9;
+            this.jobsFormLabel.Text = "Jobs ";
+            // 
+            // midSalaryLabel
+            // 
+            this.midSalaryLabel.AutoSize = true;
+            this.midSalaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.midSalaryLabel.Location = new System.Drawing.Point(526, 49);
+            this.midSalaryLabel.Name = "midSalaryLabel";
+            this.midSalaryLabel.Size = new System.Drawing.Size(53, 13);
+            this.midSalaryLabel.TabIndex = 8;
+            this.midSalaryLabel.Text = "$67,500";
+            // 
+            // maxSalaryLabel
+            // 
+            this.maxSalaryLabel.AutoSize = true;
+            this.maxSalaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxSalaryLabel.Location = new System.Drawing.Point(670, 49);
+            this.maxSalaryLabel.Name = "maxSalaryLabel";
+            this.maxSalaryLabel.Size = new System.Drawing.Size(53, 13);
+            this.maxSalaryLabel.TabIndex = 7;
+            this.maxSalaryLabel.Text = "$90,000";
+            // 
+            // minSalaryLabel
+            // 
+            this.minSalaryLabel.AutoSize = true;
+            this.minSalaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minSalaryLabel.Location = new System.Drawing.Point(378, 49);
+            this.minSalaryLabel.Name = "minSalaryLabel";
+            this.minSalaryLabel.Size = new System.Drawing.Size(53, 13);
+            this.minSalaryLabel.TabIndex = 6;
+            this.minSalaryLabel.Text = "$45,000";
+            // 
+            // salaryTrackBar
+            // 
+            this.salaryTrackBar.LargeChange = 10000;
+            this.salaryTrackBar.Location = new System.Drawing.Point(392, 62);
+            this.salaryTrackBar.Maximum = 90000;
+            this.salaryTrackBar.Minimum = 45000;
+            this.salaryTrackBar.Name = "salaryTrackBar";
+            this.salaryTrackBar.Size = new System.Drawing.Size(316, 23);
+            this.salaryTrackBar.SmallChange = 5000;
+            this.salaryTrackBar.TabIndex = 5;
+            this.salaryTrackBar.ThumbColor = System.Drawing.Color.LightCoral;
+            this.salaryTrackBar.Value = 45000;
+            this.salaryTrackBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.salaryTrackBar_Scroll);
+            // 
+            // searchJobsTextBox
+            // 
+            this.searchJobsTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchJobsTextBox.DefaultText = "";
+            this.searchJobsTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.searchJobsTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.searchJobsTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchJobsTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchJobsTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchJobsTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.searchJobsTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchJobsTextBox.Location = new System.Drawing.Point(83, 61);
+            this.searchJobsTextBox.Name = "searchJobsTextBox";
+            this.searchJobsTextBox.PasswordChar = '\0';
+            this.searchJobsTextBox.PlaceholderText = "";
+            this.searchJobsTextBox.SelectedText = "";
+            this.searchJobsTextBox.Size = new System.Drawing.Size(184, 22);
+            this.searchJobsTextBox.TabIndex = 4;
+            // 
+            // searchLabel
+            // 
+            this.searchLabel.AutoSize = true;
+            this.searchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLabel.Location = new System.Drawing.Point(11, 63);
+            this.searchLabel.Name = "searchLabel";
+            this.searchLabel.Size = new System.Drawing.Size(66, 18);
+            this.searchLabel.TabIndex = 3;
+            this.searchLabel.Text = "Search:";
             // 
             // jobsDataGridView
             // 
@@ -83,23 +228,23 @@
             this.jobsDataGridView.AllowUserToDeleteRows = false;
             this.jobsDataGridView.AllowUserToResizeColumns = false;
             this.jobsDataGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.jobsDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.jobsDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.jobsDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.jobsDataGridView.AutoGenerateColumns = false;
             this.jobsDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.jobsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.jobsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.jobsDataGridView.ColumnHeadersHeight = 40;
             this.jobsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.jobsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -109,27 +254,27 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.jobsDataGridView.DataSource = this.jobsBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.jobsDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.jobsDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
             this.jobsDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.jobsDataGridView.Location = new System.Drawing.Point(3, 77);
+            this.jobsDataGridView.Location = new System.Drawing.Point(14, 114);
             this.jobsDataGridView.Name = "jobsDataGridView";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.RosyBrown;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.jobsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.jobsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.jobsDataGridView.RowHeadersVisible = false;
-            this.jobsDataGridView.Size = new System.Drawing.Size(740, 437);
+            this.jobsDataGridView.Size = new System.Drawing.Size(709, 354);
             this.jobsDataGridView.TabIndex = 0;
             this.jobsDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.jobsDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -193,16 +338,6 @@
             this.nicheDataSet.DataSetName = "NicheDataSet";
             this.nicheDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // jobsTableAdapter
-            // 
-            this.jobsTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.JobsTableAdapter = this.jobsTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Niche.NicheDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // jobsBindingNavigator
             // 
             this.jobsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -233,6 +368,7 @@
             this.jobsBindingNavigator.Size = new System.Drawing.Size(773, 25);
             this.jobsBindingNavigator.TabIndex = 1;
             this.jobsBindingNavigator.Text = "bindingNavigator1";
+            this.jobsBindingNavigator.Visible = false;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -329,6 +465,16 @@
             this.jobsBindingNavigatorSaveItem.Text = "Save Data";
             this.jobsBindingNavigatorSaveItem.Click += new System.EventHandler(this.jobsBindingNavigatorSaveItem_Click_1);
             // 
+            // jobsTableAdapter
+            // 
+            this.jobsTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.JobsTableAdapter = this.jobsTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Niche.NicheDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // UC_Jobs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,6 +485,7 @@
             this.Name = "UC_Jobs";
             this.Size = new System.Drawing.Size(773, 547);
             this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.jobsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nicheDataSet)).EndInit();
@@ -376,5 +523,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.Label searchLabel;
+        private Guna.UI2.WinForms.Guna2TextBox searchJobsTextBox;
+        private Guna.UI2.WinForms.Guna2TrackBar salaryTrackBar;
+        private System.Windows.Forms.Label midSalaryLabel;
+        private System.Windows.Forms.Label maxSalaryLabel;
+        private System.Windows.Forms.Label minSalaryLabel;
+        private System.Windows.Forms.Label jobsFormLabel;
+        private System.Windows.Forms.Label salaryTrackBarLabel;
+        private Guna.UI2.WinForms.Guna2Button searchButton;
+        private Guna.UI2.WinForms.Guna2Button showAllButton;
     }
 }

@@ -74,6 +74,7 @@ namespace Niche
         {
             UC_About uC_About = new UC_About();
             addUserControl(uC_About);
+            MessageBox.Show("Niche created by Janna Lomibao & Raeeba Rahman, 2024.", "About Niche", MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private void loginRegisterBtn_Click(object sender, EventArgs e)

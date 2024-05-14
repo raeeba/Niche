@@ -61,7 +61,19 @@ namespace Niche.UserControlPages
             }
         }
 
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            this.jobsTableAdapter.SearchDesc(this.nicheDataSet.Jobs, searchJobsTextBox.Text);
+        }
 
-       
+        private void salaryTrackBar_Scroll(object sender, EventArgs e)
+        {
+            this.jobsTableAdapter.FindSalaryRange(this.nicheDataSet.Jobs, salaryTrackBar.Value);
+        }
+
+        private void showAllButton_Click(object sender, EventArgs e)
+        {
+            this.jobsTableAdapter.Fill(this.nicheDataSet.Jobs);
+        }
     }
 }
