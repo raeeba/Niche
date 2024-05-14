@@ -16,5 +16,27 @@ namespace Niche.UserControlPages
         {
             InitializeComponent();
         }
+
+        private void testimonialsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.testimonialsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.testimonialsDataSet);
+
+        }
+
+        public void LoadData()
+        {
+            try
+            {
+                // Your code to populate the dataset with data from the database
+                // For example:
+                this.testimonialsTableAdapter.Fill(this.testimonialsDataSet.Testimonials);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading data: " + ex.Message);
+            }
+        }
     }
 }

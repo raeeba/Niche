@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,16 @@ namespace Niche.UserControlPages
         public UC_Library()
         {
             InitializeComponent();
+        }
+
+        private void libraryLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // change LinkColor after it has been clicked
+            libraryLinkLabel.LinkVisited = true;
+
+            // program called as if in run 
+            // menu and full path not needed
+            Process.Start("about.html");
         }
     }
 }
