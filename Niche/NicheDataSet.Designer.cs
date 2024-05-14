@@ -970,7 +970,7 @@ SELECT JobID, JobTitle, Company, Location, Salary, JobDescription FROM Jobs WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int SearchDesc(NicheDataSet.JobsDataTable dataTable, string value) {
+        public virtual int SearchJob(NicheDataSet.JobsDataTable dataTable, string value) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
             if ((value == null)) {
                 throw new global::System.ArgumentNullException("value");

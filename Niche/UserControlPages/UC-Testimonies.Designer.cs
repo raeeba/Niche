@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Testimonies));
-            this.testimonialsDataSet = new Niche.TestimonialsDataSet();
-            this.testimonialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.testimonialsTableAdapter = new Niche.TestimonialsDataSetTableAdapters.TestimonialsTableAdapter();
-            this.tableAdapterManager = new Niche.TestimonialsDataSetTableAdapters.TableAdapterManager();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.testimonialsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -48,34 +48,25 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.testimonialsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.searchLabel = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.testimonialsLabel = new System.Windows.Forms.Label();
             this.searchButton = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingSource)).BeginInit();
+            this.testimonialsGuna2DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.showAllButton = new Guna.UI2.WinForms.Guna2Button();
+            this.testimonialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.testimonialsDataSet = new Niche.TestimonialsDataSet();
+            this.testimonialsTableAdapter = new Niche.TestimonialsDataSetTableAdapters.TestimonialsTableAdapter();
+            this.tableAdapterManager = new Niche.TestimonialsDataSetTableAdapters.TableAdapterManager();
+            this.testimonialsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingNavigator)).BeginInit();
             this.testimonialsBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsGuna2DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // testimonialsDataSet
-            // 
-            this.testimonialsDataSet.DataSetName = "TestimonialsDataSet";
-            this.testimonialsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // testimonialsBindingSource
-            // 
-            this.testimonialsBindingSource.DataMember = "Testimonials";
-            this.testimonialsBindingSource.DataSource = this.testimonialsDataSet;
-            // 
-            // testimonialsTableAdapter
-            // 
-            this.testimonialsTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.TestimonialsTableAdapter = this.testimonialsTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Niche.TestimonialsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // testimonialsBindingNavigator
             // 
@@ -212,24 +203,24 @@
             this.searchLabel.TabIndex = 3;
             this.searchLabel.Text = "Search:";
             // 
-            // guna2TextBox1
+            // searchTextBox
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(99, 77);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(211, 23);
-            this.guna2TextBox1.TabIndex = 4;
+            this.searchTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchTextBox.DefaultText = "";
+            this.searchTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.searchTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.searchTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchTextBox.Location = new System.Drawing.Point(99, 77);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.PasswordChar = '\0';
+            this.searchTextBox.PlaceholderText = "";
+            this.searchTextBox.SelectedText = "";
+            this.searchTextBox.Size = new System.Drawing.Size(211, 23);
+            this.searchTextBox.TabIndex = 4;
             // 
             // testimonialsLabel
             // 
@@ -247,7 +238,7 @@
             this.searchButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.searchButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.searchButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.searchButton.FillColor = System.Drawing.Color.LightCoral;
+            this.searchButton.FillColor = System.Drawing.Color.IndianRed;
             this.searchButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.searchButton.ForeColor = System.Drawing.Color.White;
             this.searchButton.Location = new System.Drawing.Point(316, 77);
@@ -255,23 +246,146 @@
             this.searchButton.Size = new System.Drawing.Size(86, 22);
             this.searchButton.TabIndex = 6;
             this.searchButton.Text = "&Search";
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // testimonialsGuna2DataGridView
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.testimonialsGuna2DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.testimonialsGuna2DataGridView.AutoGenerateColumns = false;
+            this.testimonialsGuna2DataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(9);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.testimonialsGuna2DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.testimonialsGuna2DataGridView.ColumnHeadersHeight = 40;
+            this.testimonialsGuna2DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.testimonialsGuna2DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.testimonialsGuna2DataGridView.DataSource = this.testimonialsBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.testimonialsGuna2DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.testimonialsGuna2DataGridView.GridColor = System.Drawing.Color.Gray;
+            this.testimonialsGuna2DataGridView.Location = new System.Drawing.Point(30, 152);
+            this.testimonialsGuna2DataGridView.Name = "testimonialsGuna2DataGridView";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.testimonialsGuna2DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.testimonialsGuna2DataGridView.RowHeadersVisible = false;
+            this.testimonialsGuna2DataGridView.Size = new System.Drawing.Size(673, 296);
+            this.testimonialsGuna2DataGridView.TabIndex = 6;
+            this.testimonialsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.testimonialsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.testimonialsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.testimonialsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.testimonialsGuna2DataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.testimonialsGuna2DataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.testimonialsGuna2DataGridView.ThemeStyle.GridColor = System.Drawing.Color.Gray;
+            this.testimonialsGuna2DataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.testimonialsGuna2DataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.testimonialsGuna2DataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testimonialsGuna2DataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.testimonialsGuna2DataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.testimonialsGuna2DataGridView.ThemeStyle.HeaderStyle.Height = 40;
+            this.testimonialsGuna2DataGridView.ThemeStyle.ReadOnly = false;
+            this.testimonialsGuna2DataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.testimonialsGuna2DataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.testimonialsGuna2DataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testimonialsGuna2DataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.testimonialsGuna2DataGridView.ThemeStyle.RowsStyle.Height = 22;
+            this.testimonialsGuna2DataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.testimonialsGuna2DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // showAllButton
+            // 
+            this.showAllButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.showAllButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.showAllButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.showAllButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.showAllButton.FillColor = System.Drawing.Color.IndianRed;
+            this.showAllButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.showAllButton.ForeColor = System.Drawing.Color.White;
+            this.showAllButton.Location = new System.Drawing.Point(299, 491);
+            this.showAllButton.Name = "showAllButton";
+            this.showAllButton.Size = new System.Drawing.Size(121, 28);
+            this.showAllButton.TabIndex = 7;
+            this.showAllButton.Text = "&Show All";
+            this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
+            // 
+            // testimonialsBindingSource
+            // 
+            this.testimonialsBindingSource.DataMember = "Testimonials";
+            this.testimonialsBindingSource.DataSource = this.testimonialsDataSet;
+            // 
+            // testimonialsDataSet
+            // 
+            this.testimonialsDataSet.DataSetName = "TestimonialsDataSet";
+            this.testimonialsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // testimonialsTableAdapter
+            // 
+            this.testimonialsTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TestimonialsTableAdapter = this.testimonialsTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Niche.TestimonialsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // testimonialsDataSetBindingSource
+            // 
+            this.testimonialsDataSetBindingSource.DataSource = this.testimonialsDataSet;
+            this.testimonialsDataSetBindingSource.Position = 0;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Username";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Username";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Testimonial";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Testimonial";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // UC_Testimonies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.showAllButton);
+            this.Controls.Add(this.testimonialsGuna2DataGridView);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.testimonialsLabel);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.testimonialsBindingNavigator);
             this.Name = "UC_Testimonies";
             this.Size = new System.Drawing.Size(769, 549);
-            ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingNavigator)).EndInit();
             this.testimonialsBindingNavigator.ResumeLayout(false);
             this.testimonialsBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsGuna2DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,8 +410,13 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton testimonialsBindingNavigatorSaveItem;
         private System.Windows.Forms.Label searchLabel;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox searchTextBox;
         private System.Windows.Forms.Label testimonialsLabel;
         private Guna.UI2.WinForms.Guna2Button searchButton;
+        private System.Windows.Forms.BindingSource testimonialsDataSetBindingSource;
+        private Guna.UI2.WinForms.Guna2DataGridView testimonialsGuna2DataGridView;
+        private Guna.UI2.WinForms.Guna2Button showAllButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

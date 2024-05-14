@@ -38,5 +38,15 @@ namespace Niche.UserControlPages
                 MessageBox.Show("Error loading data: " + ex.Message);
             }
         }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            this.testimonialsTableAdapter.SearchTestimonial(this.testimonialsDataSet.Testimonials, searchTextBox.Text);
+        }
+
+        private void showAllButton_Click(object sender, EventArgs e)
+        {
+            this.testimonialsTableAdapter.Fill(this.testimonialsDataSet.Testimonials);
+        }
     }
 }

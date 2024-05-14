@@ -62,6 +62,8 @@ namespace Niche
         {
             UC_Testimonies uC_Testimonies = new UC_Testimonies();
             addUserControl(uC_Testimonies);
+            // Call the LoadData method to load data into the dataset
+            uC_Testimonies.LoadData();
         }
 
         private void libraryBtn_Click(object sender, EventArgs e)
