@@ -137,7 +137,7 @@
             this.testimoniesBtn.Name = "testimoniesBtn";
             this.testimoniesBtn.Size = new System.Drawing.Size(197, 60);
             this.testimoniesBtn.TabIndex = 3;
-            this.testimoniesBtn.Text = "TESTIMONIES";
+            this.testimoniesBtn.Text = "TESTIMONIALS";
             this.testimoniesBtn.Click += new System.EventHandler(this.testimoniesBtn_Click);
             // 
             // libraryBtn
