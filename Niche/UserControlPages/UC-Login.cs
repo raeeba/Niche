@@ -27,7 +27,7 @@ namespace Niche.UserControlPages
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            this.usersTableAdapter.Login(this.usersDataSet.Users, usernameTextbox.Text, passwordTextBox.Text);
+            if (this.usersTableAdapter.Login(this.usersDataSet.Users, usernameTextbox.Text, passwordTextBox.Text)!= null);
         }
     }
 }
