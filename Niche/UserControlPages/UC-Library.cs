@@ -26,7 +26,7 @@ namespace Niche.UserControlPages
 
             // open the html file
             // write path of the file
-            string htmlFileName = "about.html"; // html file
+            string htmlFileName = "library.html"; // html file
             string htmlFilePath = Path.Combine(Application.StartupPath, htmlFileName); // full path to html file
 
             try
