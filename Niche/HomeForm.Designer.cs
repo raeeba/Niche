@@ -35,7 +35,7 @@
             this.testimoniesBtn = new Guna.UI2.WinForms.Guna2Button();
             this.libraryBtn = new Guna.UI2.WinForms.Guna2Button();
             this.aboutBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.headerLabel = new System.Windows.Forms.Label();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.upperPanel = new System.Windows.Forms.Panel();
             this.footerPanel = new System.Windows.Forms.Panel();
@@ -182,16 +182,16 @@
             this.aboutBtn.Text = "ABOUT";
             this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
             // 
-            // label1
+            // headerLabel
             // 
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Salmon;
-            this.label1.Location = new System.Drawing.Point(30, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 41);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "NICHE";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.headerLabel.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headerLabel.ForeColor = System.Drawing.Color.Salmon;
+            this.headerLabel.Location = new System.Drawing.Point(30, 0);
+            this.headerLabel.Name = "headerLabel";
+            this.headerLabel.Size = new System.Drawing.Size(127, 41);
+            this.headerLabel.TabIndex = 1;
+            this.headerLabel.Text = "NICHE";
+            this.headerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelContainer
             // 
@@ -204,7 +204,7 @@
             // upperPanel
             // 
             this.upperPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.upperPanel.Controls.Add(this.label1);
+            this.upperPanel.Controls.Add(this.headerLabel);
             this.upperPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.upperPanel.Location = new System.Drawing.Point(0, 0);
             this.upperPanel.Name = "upperPanel";
@@ -224,11 +224,11 @@
             // footerLabel
             // 
             this.footerLabel.AutoSize = true;
-            this.footerLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.footerLabel.Font = new System.Drawing.Font("Tw Cen MT Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.footerLabel.ForeColor = System.Drawing.Color.Salmon;
-            this.footerLabel.Location = new System.Drawing.Point(432, 10);
+            this.footerLabel.Location = new System.Drawing.Point(484, 5);
             this.footerLabel.Name = "footerLabel";
-            this.footerLabel.Size = new System.Drawing.Size(74, 16);
+            this.footerLabel.Size = new System.Drawing.Size(59, 15);
             this.footerLabel.TabIndex = 0;
             this.footerLabel.Text = "2024 Niche";
             // 
@@ -257,7 +257,7 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel navPanel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label headerLabel;
         private Guna.UI2.WinForms.Guna2Button homeBtn;
         private Guna.UI2.WinForms.Guna2Button jobsBtn;
         private Guna.UI2.WinForms.Guna2Button testimoniesBtn;

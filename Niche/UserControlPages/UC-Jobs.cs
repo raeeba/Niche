@@ -63,7 +63,7 @@ namespace Niche.UserControlPages
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            this.jobsTableAdapter.SearchJob(this.nicheDataSet.Jobs, searchJobsTextBox.Text);
+            this.jobsTableAdapter.Search(this.nicheDataSet.Jobs, searchJobsTextBox.Text);
         }
 
         private void salaryTrackBar_Scroll(object sender, EventArgs e)

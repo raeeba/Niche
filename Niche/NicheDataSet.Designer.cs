@@ -923,7 +923,8 @@ SELECT JobID, JobTitle, Company, Location, Salary, JobDescription FROM Jobs WHER
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = "SELECT JobID, JobTitle, Company, Location, Salary, JobDescription FROM dbo.Jobs W" +
-                "HERE (JobTitle LIKE \'%\' + @value + \'%\')";
+                "HERE (JobTitle LIKE \'%\' + @value + \'%\') OR (Company LIKE \'%\' + @value + \'%\')  OR" +
+                " (Location LIKE \'%\' + @value + \'%\') OR (JobDescription LIKE \'%\' + @value + \'%\')";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "JobTitle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -970,7 +971,7 @@ SELECT JobID, JobTitle, Company, Location, Salary, JobDescription FROM Jobs WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int SearchJob(NicheDataSet.JobsDataTable dataTable, string value) {
+        public virtual int Search(NicheDataSet.JobsDataTable dataTable, string value) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
             if ((value == null)) {
                 throw new global::System.ArgumentNullException("value");
