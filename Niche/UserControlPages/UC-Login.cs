@@ -16,5 +16,13 @@ namespace Niche.UserControlPages
         {
             InitializeComponent();
         }
+
+        private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.usersBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.usersDataSet);
+
+        }
     }
 }
