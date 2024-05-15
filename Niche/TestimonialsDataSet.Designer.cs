@@ -823,8 +823,8 @@ namespace Niche.TestimonialsDataSetTableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT UserID, Username, Testimonial FROM dbo.Testimonials WHERE(Testimonial LIKE" +
-                " \'%\' + @value + \'%\')";
+            this._commandCollection[1].CommandText = "SELECT UserID, Username, Testimonial FROM dbo.Testimonials WHERE (Testimonial LIK" +
+                "E \'%\' + @value +\'%\')";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "Testimonial", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -857,7 +857,7 @@ namespace Niche.TestimonialsDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int SearchTestimonial(TestimonialsDataSet.TestimonialsDataTable dataTable, string value) {
+        public virtual int SearchKeyword(TestimonialsDataSet.TestimonialsDataTable dataTable, string value) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((value == null)) {
                 throw new global::System.ArgumentNullException("value");

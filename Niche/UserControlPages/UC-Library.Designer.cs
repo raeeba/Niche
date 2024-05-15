@@ -28,53 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.libraryLabel = new System.Windows.Forms.Label();
+            this.libraryDescLabel = new System.Windows.Forms.Label();
             this.libraryLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.libraryCircleButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.SuspendLayout();
             // 
-            // label1
+            // libraryLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(568, 224);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "library";
+            this.libraryLabel.AutoSize = true;
+            this.libraryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libraryLabel.Location = new System.Drawing.Point(26, 32);
+            this.libraryLabel.Name = "libraryLabel";
+            this.libraryLabel.Size = new System.Drawing.Size(73, 24);
+            this.libraryLabel.TabIndex = 4;
+            this.libraryLabel.Text = "Library";
+            // 
+            // libraryDescLabel
+            // 
+            this.libraryDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libraryDescLabel.Location = new System.Drawing.Point(82, 106);
+            this.libraryDescLabel.Name = "libraryDescLabel";
+            this.libraryDescLabel.Size = new System.Drawing.Size(597, 53);
+            this.libraryDescLabel.TabIndex = 5;
+            this.libraryDescLabel.Text = "Our site offers resources to help bolster your CV. Please click the link down bel" +
+    "ow to view our Resources Library.";
             // 
             // libraryLinkLabel
             // 
-            this.libraryLinkLabel.AutoSize = true;
-            this.libraryLinkLabel.Location = new System.Drawing.Point(127, 262);
+            this.libraryLinkLabel.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.libraryLinkLabel.BackColor = System.Drawing.Color.IndianRed;
+            this.libraryLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libraryLinkLabel.LinkColor = System.Drawing.Color.White;
+            this.libraryLinkLabel.Location = new System.Drawing.Point(85, 203);
             this.libraryLinkLabel.Name = "libraryLinkLabel";
-            this.libraryLinkLabel.Size = new System.Drawing.Size(80, 13);
-            this.libraryLinkLabel.TabIndex = 1;
+            this.libraryLinkLabel.Size = new System.Drawing.Size(580, 123);
+            this.libraryLinkLabel.TabIndex = 6;
             this.libraryLinkLabel.TabStop = true;
-            this.libraryLinkLabel.Text = "libraryLinkLabel";
+            this.libraryLinkLabel.Text = "Click to view Resources Library";
+            this.libraryLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.libraryLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.libraryLinkLabel_LinkClicked);
-            // 
-            // libraryCircleButton
-            // 
-            this.libraryCircleButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.libraryCircleButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.libraryCircleButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.libraryCircleButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.libraryCircleButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.libraryCircleButton.ForeColor = System.Drawing.Color.White;
-            this.libraryCircleButton.Location = new System.Drawing.Point(244, 144);
-            this.libraryCircleButton.Name = "libraryCircleButton";
-            this.libraryCircleButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.libraryCircleButton.Size = new System.Drawing.Size(233, 221);
-            this.libraryCircleButton.TabIndex = 2;
-            this.libraryCircleButton.Text = "Click to visit library";
             // 
             // UC_Library
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.libraryCircleButton);
             this.Controls.Add(this.libraryLinkLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.libraryDescLabel);
+            this.Controls.Add(this.libraryLabel);
             this.Name = "UC_Library";
             this.Size = new System.Drawing.Size(769, 549);
             this.ResumeLayout(false);
@@ -83,9 +83,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label libraryLabel;
+        private System.Windows.Forms.Label libraryDescLabel;
         private System.Windows.Forms.LinkLabel libraryLinkLabel;
-        private Guna.UI2.WinForms.Guna2CircleButton libraryCircleButton;
     }
 }

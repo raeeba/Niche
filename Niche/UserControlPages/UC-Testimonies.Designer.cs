@@ -30,14 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Testimonies));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.testimonialsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.testimonialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.testimonialsDataSet = new Niche.TestimonialsDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -51,20 +49,22 @@
             this.testimonialsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.testimonialsGuna2DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.showAllButton = new Guna.UI2.WinForms.Guna2Button();
-            this.testimonialsTableAdapter = new Niche.TestimonialsDataSetTableAdapters.TestimonialsTableAdapter();
-            this.tableAdapterManager = new Niche.TestimonialsDataSetTableAdapters.TableAdapterManager();
-            this.testimonialsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.searchButton = new Guna.UI2.WinForms.Guna2Button();
             this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.searchLabel = new System.Windows.Forms.Label();
             this.testimonialsLabel = new System.Windows.Forms.Label();
+            this.testimonialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.testimonialsDataSet = new Niche.TestimonialsDataSet();
+            this.testimonialsTableAdapter = new Niche.TestimonialsDataSetTableAdapters.TestimonialsTableAdapter();
+            this.tableAdapterManager = new Niche.TestimonialsDataSetTableAdapters.TableAdapterManager();
+            this.testimonialsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.testimonialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingNavigator)).BeginInit();
             this.testimonialsBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsGuna2DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.testimonialsGuna2DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,16 +107,6 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // testimonialsBindingSource
-            // 
-            this.testimonialsBindingSource.DataMember = "Testimonials";
-            this.testimonialsBindingSource.DataSource = this.testimonialsDataSet;
-            // 
-            // testimonialsDataSet
-            // 
-            this.testimonialsDataSet.DataSetName = "TestimonialsDataSet";
-            this.testimonialsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -205,45 +195,45 @@
             // 
             // testimonialsGuna2DataGridView
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.testimonialsGuna2DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.testimonialsGuna2DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.testimonialsGuna2DataGridView.AutoGenerateColumns = false;
             this.testimonialsGuna2DataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(9);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.testimonialsGuna2DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(9);
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.testimonialsGuna2DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.testimonialsGuna2DataGridView.ColumnHeadersHeight = 40;
             this.testimonialsGuna2DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.testimonialsGuna2DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.usernameDataGridViewTextBoxColumn,
             this.testimonialDataGridViewTextBoxColumn});
             this.testimonialsGuna2DataGridView.DataSource = this.testimonialsBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.testimonialsGuna2DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.testimonialsGuna2DataGridView.DefaultCellStyle = dataGridViewCellStyle11;
             this.testimonialsGuna2DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.testimonialsGuna2DataGridView.Location = new System.Drawing.Point(27, 140);
             this.testimonialsGuna2DataGridView.Name = "testimonialsGuna2DataGridView";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.RosyBrown;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.testimonialsGuna2DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.testimonialsGuna2DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.testimonialsGuna2DataGridView.RowHeadersVisible = false;
             this.testimonialsGuna2DataGridView.Size = new System.Drawing.Size(715, 330);
             this.testimonialsGuna2DataGridView.TabIndex = 6;
@@ -285,21 +275,6 @@
             this.showAllButton.Text = "Show &All";
             this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
             // 
-            // testimonialsTableAdapter
-            // 
-            this.testimonialsTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.TestimonialsTableAdapter = this.testimonialsTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Niche.TestimonialsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // testimonialsDataSetBindingSource
-            // 
-            this.testimonialsDataSetBindingSource.DataSource = this.testimonialsDataSet;
-            this.testimonialsDataSetBindingSource.Position = 0;
-            // 
             // searchButton
             // 
             this.searchButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -314,6 +289,7 @@
             this.searchButton.Size = new System.Drawing.Size(95, 23);
             this.searchButton.TabIndex = 8;
             this.searchButton.Text = "&Search";
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // searchTextBox
             // 
@@ -354,14 +330,42 @@
             this.testimonialsLabel.TabIndex = 11;
             this.testimonialsLabel.Text = "Testimonials";
             // 
+            // testimonialsBindingSource
+            // 
+            this.testimonialsBindingSource.DataMember = "Testimonials";
+            this.testimonialsBindingSource.DataSource = this.testimonialsDataSet;
+            // 
+            // testimonialsDataSet
+            // 
+            this.testimonialsDataSet.DataSetName = "TestimonialsDataSet";
+            this.testimonialsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // testimonialsTableAdapter
+            // 
+            this.testimonialsTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TestimonialsTableAdapter = this.testimonialsTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Niche.TestimonialsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // testimonialsDataSetBindingSource
+            // 
+            this.testimonialsDataSetBindingSource.DataSource = this.testimonialsDataSet;
+            this.testimonialsDataSetBindingSource.Position = 0;
+            // 
             // usernameDataGridViewTextBoxColumn
             // 
+            this.usernameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
             this.usernameDataGridViewTextBoxColumn.HeaderText = "Username";
             this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            this.usernameDataGridViewTextBoxColumn.Width = 129;
             // 
             // testimonialDataGridViewTextBoxColumn
             // 
+            this.testimonialDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.testimonialDataGridViewTextBoxColumn.DataPropertyName = "Testimonial";
             this.testimonialDataGridViewTextBoxColumn.HeaderText = "Testimonial";
             this.testimonialDataGridViewTextBoxColumn.Name = "testimonialDataGridViewTextBoxColumn";
@@ -382,9 +386,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingNavigator)).EndInit();
             this.testimonialsBindingNavigator.ResumeLayout(false);
             this.testimonialsBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.testimonialsGuna2DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.testimonialsGuna2DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testimonialsDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

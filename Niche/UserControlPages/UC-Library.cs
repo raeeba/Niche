@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,9 +24,19 @@ namespace Niche.UserControlPages
             // change LinkColor after it has been clicked
             libraryLinkLabel.LinkVisited = true;
 
-            // program called as if in run 
-            // menu and full path not needed
-            Process.Start("about.html");
+            // open the html file
+            // write path of the file
+            string htmlFileName = "about.html"; // html file
+            string htmlFilePath = Path.Combine(Application.StartupPath, htmlFileName); // full path to html file
+
+            try
+            {
+                Process.Start(htmlFilePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening HTML file: " + ex.Message);
+            }
         }
     }
 }

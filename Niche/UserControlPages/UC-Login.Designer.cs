@@ -138,7 +138,6 @@
             this.loginButton.Size = new System.Drawing.Size(180, 45);
             this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Login";
-            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // guna2HtmlLabel1
             // 
