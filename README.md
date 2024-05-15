@@ -5,6 +5,7 @@ W24 420-331-VA Application Development 1 Final Project
 This project aims to create a website that provides a list of jobs in different industries. This website will focus more on providing jobs that can be done remotely. This project will solve various problems such as decreasing someone’s cost of living as people tend to move to cities for job opportunities, promoting work-life balance, and increasing the range of job opportunities.
 
 **Sources:**
+Articles:
   “Interview Skills - Concordia University.” Interview Skills - Concordia University,_Student Success Center_, www.concordia.ca/students/success/career-planning/interview-guide.html. 
   "GUIDE TO INTERVIEWING",Mcgill, https://www.mcgill.ca/careers4engineers/files/careers4engineers/guide_interview.pdf.
   
