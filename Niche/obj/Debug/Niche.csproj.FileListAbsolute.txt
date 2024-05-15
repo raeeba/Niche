@@ -97,3 +97,5 @@ C:\Users\2281758\Documents\Niche\Niche\obj\Debug\Niche.csproj.CoreCompileInputs.
 C:\Users\2281758\Documents\Niche\Niche\obj\Debug\Niche.csproj.CopyComplete
 C:\Users\2281758\Documents\Niche\Niche\obj\Debug\Niche.exe
 C:\Users\2281758\Documents\Niche\Niche\obj\Debug\Niche.pdb
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\NicheFinal\Niche\Niche\bin\Debug\Xceed.Document.NET.dll
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\NicheFinal\Niche\Niche\bin\Debug\Xceed.Words.NET.dll
