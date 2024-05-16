@@ -63,19 +63,9 @@ namespace Niche.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CevelineImage08 {
+        internal static System.Drawing.Bitmap user1 {
             get {
-                object obj = ResourceManager.GetObject("CevelineImage08", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap image0 {
-            get {
-                object obj = ResourceManager.GetObject("image0", resourceCulture);
+                object obj = ResourceManager.GetObject("user1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

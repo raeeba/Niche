@@ -49,9 +49,12 @@ namespace Niche.UserControlPages
                     Password = passwordTextBox.Text;
 
                     // page that needed to be loaded next
-                    UC_Home home = new UC_Home();
-                    home.Show();
+                    UC_Home uC_Home = new UC_Home();
+                    uC_Home.Show();
                     this.Hide();
+                    /*HomeForm home = new HomeForm();
+                    home.addUserControl(uC_Home);
+                    this.Hide();*/
                 }
                 else
                 {

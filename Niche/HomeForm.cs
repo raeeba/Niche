@@ -14,15 +14,18 @@ namespace Niche
 {
     public partial class HomeForm : Form
     {
+        private bool isToggled = false; // toggle button
         public HomeForm()
         {
             InitializeComponent();
             UC_Home uC_Home = new UC_Home();
             addUserControl(uC_Home);
-           // LoadData();
+            //UC_Login uC_Login = new UC_Login();
+            //addUserControl(uC_Login);
+            // LoadData();
         }
         
-        private void addUserControl(UserControl userControl)
+        public void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
             panelContainer.Controls.Clear();
@@ -73,6 +76,12 @@ namespace Niche
             addUserControl(uC_Library);
         }
 
+        public void OpenLibrary()
+        {
+            UC_Library uC_Library = new UC_Library();
+            addUserControl(uC_Library);
+        }
+
         private void aboutBtn_Click(object sender, EventArgs e)
         {
             UC_About uC_About = new UC_About();
@@ -113,6 +122,34 @@ namespace Niche
                 case 2:     changeLanguage.UpdateConfig("language", "es");
                             Application.Restart();
                             break;
+            }
+        }
+
+        private void themeToggleSwitch_CheckedChanged(object sender, EventArgs e)
+        {
+            isToggled = !isToggled;
+
+            // update the appearance of the form
+            UpdateFormAppearance();
+        }
+
+        private void UpdateFormAppearance()
+        {
+            if (isToggled)
+            {
+                // light mode
+                upperPanel.BackColor = Color.LightSteelBlue;
+                footerPanel.BackColor = Color.LightSteelBlue;
+                headerLabel.ForeColor = Color.BlueViolet;
+                footerLabel.ForeColor = Color.BlueViolet;
+            }
+            else
+            {
+                // dark mode
+                upperPanel.BackColor = SystemColors.ControlDarkDark;
+                footerPanel.BackColor = SystemColors.ControlDarkDark;
+                headerLabel.ForeColor = Color.Salmon;
+                footerLabel.ForeColor = Color.Salmon;
             }
         }
     }
