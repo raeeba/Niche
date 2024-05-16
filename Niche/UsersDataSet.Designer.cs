@@ -823,11 +823,11 @@ SELECT UserID, Username, Password FROM Users WHERE (UserID = @UserID)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT UserID, Username, Password FROM dbo.Users WHERE (Username LIKE \'%\' + @firs" +
-                "tValue + \'%\') AND  (Password  LIKE \'%\' + @secondValue + \'%\')";
+            this._commandCollection[1].CommandText = "SELECT COUNT(*) FROM dbo.Users WHERE (Username = @userName) AND (Password = @pass" +
+                "word)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@firstValue", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@secondValue", global::System.Data.SqlDbType.NChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@userName", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.NChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -858,19 +858,19 @@ SELECT UserID, Username, Password FROM Users WHERE (UserID = @UserID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int Login(UsersDataSet.UsersDataTable dataTable, string firstValue, string secondValue) {
+        public virtual int Login(UsersDataSet.UsersDataTable dataTable, string userName, string password) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((firstValue == null)) {
-                throw new global::System.ArgumentNullException("firstValue");
+            if ((userName == null)) {
+                throw new global::System.ArgumentNullException("userName");
             }
             else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(firstValue));
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(userName));
             }
-            if ((secondValue == null)) {
-                throw new global::System.ArgumentNullException("secondValue");
+            if ((password == null)) {
+                throw new global::System.ArgumentNullException("password");
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(secondValue));
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(password));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();

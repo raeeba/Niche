@@ -117,4 +117,111 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="libraryLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;libraryLinkLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;libraryLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="libraryLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 203</value>
+  </data>
+  <data name="libraryDescLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>597, 53</value>
+  </data>
+  <data name="libraryLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;libraryLinkLabel.Name" xml:space="preserve">
+    <value>libraryLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;libraryLabel.Name" xml:space="preserve">
+    <value>libraryLabel</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 549</value>
+  </data>
+  <data name="&gt;&gt;libraryLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;libraryDescLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="libraryDescLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 106</value>
+  </data>
+  <data name="&gt;&gt;libraryDescLabel.Name" xml:space="preserve">
+    <value>libraryDescLabel</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UC_Library</value>
+  </data>
+  <data name="libraryLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 24</value>
+  </data>
+  <data name="libraryDescLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;libraryDescLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="libraryLinkLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="libraryDescLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="libraryLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;libraryLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;libraryLinkLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;libraryLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="libraryDescLabel.Text" xml:space="preserve">
+    <value>Our site offers resources to help bolster your CV. Please click the link down below to view our Resources Library.</value>
+  </data>
+  <data name="libraryLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 32</value>
+  </data>
+  <data name="libraryLabel.Text" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="&gt;&gt;libraryDescLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="libraryLinkLabel.Text" xml:space="preserve">
+    <value>Click to view Resources Library</value>
+  </data>
+  <data name="libraryLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="libraryLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 123</value>
+  </data>
+  <data name="libraryLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es</value>
+  </metadata>
 </root>

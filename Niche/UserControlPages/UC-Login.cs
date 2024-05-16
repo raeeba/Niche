@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Niche.UserControlPages
 {
@@ -16,7 +17,7 @@ namespace Niche.UserControlPages
         {
             InitializeComponent();
         }
-
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\NicheFinal\Niche\Niche\NicheDB.mdf"";Integrated Security=True");
         private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -25,9 +26,51 @@ namespace Niche.UserControlPages
 
         }
 
-        /*private void loginButton_Click(object sender, EventArgs e)
+        private void loginButton_Click(object sender, EventArgs e)
         {
-            if (this.usersTableAdapter.Login(this.usersDataSet.Users, usernameTextbox.Text, passwordTextBox.Text)!= null);
-        }*/
+            //this.usersTableAdapter.Login(this.usersDataSet.Users, usernameTextbox.Text, passwordTextBox.Text);
+            //MessageBox.Show("Welcome " + usernameTextbox.Text);
+            String Username, Password;
+
+            Username= usernameTextbox.Text;
+            Password = passwordTextBox.Text;
+
+            try
+            {
+                String query = "SELECT * FROM Users WHERE Username = '" + usernameTextbox.Text + "' AND Password = '" + passwordTextBox.Text + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+
+                if(dtable.Rows.Count > 0)
+                {
+                    Username = usernameTextbox.Text;
+                    Password = passwordTextBox.Text;
+
+                    // page that needed to be loaded next
+                    UC_Home home = new UC_Home();
+                    home.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid login details", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    usernameTextbox.Clear();
+                    passwordTextBox.Clear();
+
+                    // to focus username
+                    usernameTextbox.Focus();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error.");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

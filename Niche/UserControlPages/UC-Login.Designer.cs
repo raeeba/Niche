@@ -39,10 +39,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.registerNowlabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.usersDataSet = new Niche.UsersDataSet();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usersTableAdapter = new Niche.UsersDataSetTableAdapters.UsersTableAdapter();
-            this.tableAdapterManager = new Niche.UsersDataSetTableAdapters.TableAdapterManager();
             this.usersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -56,10 +52,14 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.usersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            ((System.ComponentModel.ISupportInitialize)(this.usersDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersDataSet = new Niche.UsersDataSet();
+            this.usersTableAdapter = new Niche.UsersDataSetTableAdapters.UsersTableAdapter();
+            this.tableAdapterManager = new Niche.UsersDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingNavigator)).BeginInit();
             this.usersBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // usernameLabel
@@ -138,6 +138,7 @@
             this.loginButton.Size = new System.Drawing.Size(180, 45);
             this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Login";
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -180,26 +181,6 @@
             this.registerNowlabel.Size = new System.Drawing.Size(97, 18);
             this.registerNowlabel.TabIndex = 8;
             this.registerNowlabel.Text = "Register now!";
-            // 
-            // usersDataSet
-            // 
-            this.usersDataSet.DataSetName = "UsersDataSet";
-            this.usersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "Users";
-            this.usersBindingSource.DataSource = this.usersDataSet;
-            // 
-            // usersTableAdapter
-            // 
-            this.usersTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = Niche.UsersDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
             // 
             // usersBindingNavigator
             // 
@@ -327,6 +308,26 @@
             this.usersBindingNavigatorSaveItem.Text = "Save Data";
             this.usersBindingNavigatorSaveItem.Click += new System.EventHandler(this.usersBindingNavigatorSaveItem_Click);
             // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "Users";
+            this.usersBindingSource.DataSource = this.usersDataSet;
+            // 
+            // usersDataSet
+            // 
+            this.usersDataSet.DataSetName = "UsersDataSet";
+            this.usersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.UpdateOrder = Niche.UsersDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
+            // 
             // UC_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,11 +344,11 @@
             this.Controls.Add(this.usernameLabel);
             this.Name = "UC_Login";
             this.Size = new System.Drawing.Size(767, 555);
-            ((System.ComponentModel.ISupportInitialize)(this.usersDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingNavigator)).EndInit();
             this.usersBindingNavigator.ResumeLayout(false);
             this.usersBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
