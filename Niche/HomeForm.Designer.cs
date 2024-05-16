@@ -57,10 +57,8 @@
             this.navPanel.Controls.Add(this.testimoniesBtn);
             this.navPanel.Controls.Add(this.libraryBtn);
             this.navPanel.Controls.Add(this.aboutBtn);
-            this.navPanel.Location = new System.Drawing.Point(0, 38);
+            resources.ApplyResources(this.navPanel, "navPanel");
             this.navPanel.Name = "navPanel";
-            this.navPanel.Size = new System.Drawing.Size(200, 568);
-            this.navPanel.TabIndex = 0;
             // 
             // loginRegisterBtn
             // 
@@ -70,11 +68,9 @@
             this.loginRegisterBtn.ImageOffset = new System.Drawing.Point(0, 0);
             this.loginRegisterBtn.ImageRotate = 0F;
             this.loginRegisterBtn.ImageSize = new System.Drawing.Size(90, 70);
-            this.loginRegisterBtn.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this.loginRegisterBtn, "loginRegisterBtn");
             this.loginRegisterBtn.Name = "loginRegisterBtn";
             this.loginRegisterBtn.PressedState.ImageSize = new System.Drawing.Size(90, 90);
-            this.loginRegisterBtn.Size = new System.Drawing.Size(197, 96);
-            this.loginRegisterBtn.TabIndex = 0;
             this.loginRegisterBtn.Click += new System.EventHandler(this.loginRegisterBtn_Click);
             // 
             // homeBtn
@@ -90,14 +86,10 @@
             this.homeBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.homeBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.homeBtn.FillColor = System.Drawing.Color.White;
-            this.homeBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.homeBtn, "homeBtn");
             this.homeBtn.ForeColor = System.Drawing.Color.Brown;
             this.homeBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.homeBtn.Location = new System.Drawing.Point(3, 105);
             this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(197, 60);
-            this.homeBtn.TabIndex = 1;
-            this.homeBtn.Text = "HOME";
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
             // jobsBtn
@@ -112,14 +104,10 @@
             this.jobsBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.jobsBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.jobsBtn.FillColor = System.Drawing.Color.White;
-            this.jobsBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.jobsBtn, "jobsBtn");
             this.jobsBtn.ForeColor = System.Drawing.Color.Brown;
             this.jobsBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.jobsBtn.Location = new System.Drawing.Point(3, 171);
             this.jobsBtn.Name = "jobsBtn";
-            this.jobsBtn.Size = new System.Drawing.Size(197, 60);
-            this.jobsBtn.TabIndex = 2;
-            this.jobsBtn.Text = "JOBS";
             this.jobsBtn.Click += new System.EventHandler(this.jobsBtn_Click);
             // 
             // testimoniesBtn
@@ -133,14 +121,10 @@
             this.testimoniesBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.testimoniesBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.testimoniesBtn.FillColor = System.Drawing.Color.White;
-            this.testimoniesBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.testimoniesBtn, "testimoniesBtn");
             this.testimoniesBtn.ForeColor = System.Drawing.Color.Brown;
             this.testimoniesBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.testimoniesBtn.Location = new System.Drawing.Point(3, 237);
             this.testimoniesBtn.Name = "testimoniesBtn";
-            this.testimoniesBtn.Size = new System.Drawing.Size(197, 60);
-            this.testimoniesBtn.TabIndex = 3;
-            this.testimoniesBtn.Text = "TESTIMONIALS";
             this.testimoniesBtn.Click += new System.EventHandler(this.testimoniesBtn_Click);
             // 
             // libraryBtn
@@ -154,14 +138,10 @@
             this.libraryBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.libraryBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.libraryBtn.FillColor = System.Drawing.Color.White;
-            this.libraryBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.libraryBtn, "libraryBtn");
             this.libraryBtn.ForeColor = System.Drawing.Color.Brown;
             this.libraryBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.libraryBtn.Location = new System.Drawing.Point(3, 303);
             this.libraryBtn.Name = "libraryBtn";
-            this.libraryBtn.Size = new System.Drawing.Size(197, 60);
-            this.libraryBtn.TabIndex = 4;
-            this.libraryBtn.Text = "LIBRARY";
             this.libraryBtn.Click += new System.EventHandler(this.libraryBtn_Click);
             // 
             // aboutBtn
@@ -175,35 +155,23 @@
             this.aboutBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.aboutBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.aboutBtn.FillColor = System.Drawing.Color.White;
-            this.aboutBtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.aboutBtn, "aboutBtn");
             this.aboutBtn.ForeColor = System.Drawing.Color.Brown;
             this.aboutBtn.HoverState.CustomBorderColor = System.Drawing.Color.IndianRed;
-            this.aboutBtn.Location = new System.Drawing.Point(3, 369);
             this.aboutBtn.Name = "aboutBtn";
-            this.aboutBtn.Size = new System.Drawing.Size(197, 60);
-            this.aboutBtn.TabIndex = 5;
-            this.aboutBtn.Text = "ABOUT";
             this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
             // 
             // headerLabel
             // 
-            this.headerLabel.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.headerLabel, "headerLabel");
             this.headerLabel.ForeColor = System.Drawing.Color.Salmon;
-            this.headerLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.headerLabel.Location = new System.Drawing.Point(30, 0);
             this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(127, 41);
-            this.headerLabel.TabIndex = 1;
-            this.headerLabel.Text = "NICHE";
-            this.headerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelContainer
             // 
             this.panelContainer.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panelContainer.Location = new System.Drawing.Point(200, 38);
+            resources.ApplyResources(this.panelContainer, "panelContainer");
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(769, 558);
-            this.panelContainer.TabIndex = 1;
             // 
             // upperPanel
             // 
@@ -211,11 +179,8 @@
             this.upperPanel.Controls.Add(this.themeToggleSwitch);
             this.upperPanel.Controls.Add(this.languageComboBox);
             this.upperPanel.Controls.Add(this.headerLabel);
-            this.upperPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.upperPanel.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.upperPanel, "upperPanel");
             this.upperPanel.Name = "upperPanel";
-            this.upperPanel.Size = new System.Drawing.Size(971, 41);
-            this.upperPanel.TabIndex = 2;
             // 
             // themeToggleSwitch
             // 
@@ -223,10 +188,8 @@
             this.themeToggleSwitch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.themeToggleSwitch.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.themeToggleSwitch.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.themeToggleSwitch.Location = new System.Drawing.Point(17, 10);
+            resources.ApplyResources(this.themeToggleSwitch, "themeToggleSwitch");
             this.themeToggleSwitch.Name = "themeToggleSwitch";
-            this.themeToggleSwitch.Size = new System.Drawing.Size(35, 20);
-            this.themeToggleSwitch.TabIndex = 0;
             this.themeToggleSwitch.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.themeToggleSwitch.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.themeToggleSwitch.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
@@ -238,51 +201,37 @@
             this.languageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
-            "English",
-            "French",
-            "Spanish"});
-            this.languageComboBox.Location = new System.Drawing.Point(814, 12);
+            resources.GetString("languageComboBox.Items"),
+            resources.GetString("languageComboBox.Items1"),
+            resources.GetString("languageComboBox.Items2")});
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.Name = "languageComboBox";
-            this.languageComboBox.Size = new System.Drawing.Size(121, 21);
-            this.languageComboBox.TabIndex = 2;
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
             // footerPanel
             // 
             this.footerPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.footerPanel.Controls.Add(this.footerLabel);
-            this.footerPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footerPanel.Location = new System.Drawing.Point(0, 589);
+            resources.ApplyResources(this.footerPanel, "footerPanel");
             this.footerPanel.Name = "footerPanel";
-            this.footerPanel.Size = new System.Drawing.Size(971, 29);
-            this.footerPanel.TabIndex = 3;
             // 
             // footerLabel
             // 
-            this.footerLabel.AutoSize = true;
-            this.footerLabel.Font = new System.Drawing.Font("Tw Cen MT Condensed", 9.75F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.footerLabel, "footerLabel");
             this.footerLabel.ForeColor = System.Drawing.Color.Salmon;
-            this.footerLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.footerLabel.Location = new System.Drawing.Point(484, 5);
             this.footerLabel.Name = "footerLabel";
-            this.footerLabel.Size = new System.Drawing.Size(59, 15);
-            this.footerLabel.TabIndex = 0;
-            this.footerLabel.Text = "2024 Niche";
             // 
             // HomeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(971, 618);
             this.Controls.Add(this.footerPanel);
             this.Controls.Add(this.upperPanel);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.navPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomeForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "HOME";
             this.navPanel.ResumeLayout(false);
             this.upperPanel.ResumeLayout(false);
             this.footerPanel.ResumeLayout(false);

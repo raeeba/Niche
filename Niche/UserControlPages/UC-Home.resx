@@ -117,405 +117,435 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;firstNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="firstNameLabel.Text" xml:space="preserve">
+    <value>Nombre de pila:</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="firstNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="experienceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 128</value>
+  </data>
+  <data name="&gt;&gt;infoLabel.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="&gt;&gt;welcomeLabel.Name" xml:space="preserve">
+    <value>welcomeLabel</value>
+  </data>
+  <data name="educationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;educationTextBox.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="&gt;&gt;infoLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="createCVGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;skillsLabel.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
   <data name="languageComboBox.Items2" xml:space="preserve">
     <value>Spanish</value>
   </data>
   <data name="languageComboBox.Items1" xml:space="preserve">
     <value>French</value>
   </data>
-  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
-    <value>languageComboBox</value>
-  </data>
-  <data name="&gt;&gt;educationLabel.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lastNameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;createSampleCVButton.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="createSampleCVButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 31</value>
-  </data>
-  <data name="experienceTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 23</value>
-  </data>
-  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 15</value>
-  </data>
-  <data name="experienceLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;experienceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;educationLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;lastNameTextBox.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="infoLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11.25pt</value>
-  </data>
-  <data name="infoLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="firstNameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;firstNameTextBox.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;skillsLabel.Name" xml:space="preserve">
-    <value>skillsLabel</value>
-  </data>
-  <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="&gt;&gt;createCVGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="educationTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 23</value>
-  </data>
-  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;experienceLabel.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="educationLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>257, 106</value>
-  </data>
-  <data name="experienceTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="experienceLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 23</value>
-  </data>
-  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 23</value>
-  </data>
-  <data name="infoLabel.Text" xml:space="preserve">
-    <value>Please enter your information below:</value>
-  </data>
-  <data name="&gt;&gt;infoLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;educationLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;experienceLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="createCVGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 221</value>
-  </data>
-  <data name="createCVGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>700, 305</value>
-  </data>
-  <data name="&gt;&gt;infoLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lastNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;firstNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="experienceLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 15</value>
-  </data>
-  <data name="educationLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="createSampleCVButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;experienceTextBox.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="firstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 23</value>
-  </data>
-  <data name="&gt;&gt;experienceTextBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;createCVGroupBox.Name" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="&gt;&gt;firstNameTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;firstNameTextBox.Name" xml:space="preserve">
-    <value>firstNameTextBox</value>
-  </data>
-  <data name="createCVGroupBox.Text" xml:space="preserve">
-    <value>Create Sample CV</value>
-  </data>
-  <data name="createCVGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;lastNameTextBox.Name" xml:space="preserve">
-    <value>lastNameTextBox</value>
-  </data>
-  <data name="&gt;&gt;firstNameLabel.Name" xml:space="preserve">
-    <value>firstNameLabel</value>
-  </data>
-  <data name="&gt;&gt;experienceLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="createSampleCVButton.Text" xml:space="preserve">
-    <value>Create Sample CV</value>
-  </data>
-  <data name="&gt;&gt;lastNameLabel.Name" xml:space="preserve">
-    <value>lastNameLabel</value>
-  </data>
-  <data name="&gt;&gt;skillsLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="educationTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 128</value>
-  </data>
-  <data name="experienceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>470, 106</value>
-  </data>
-  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="createSampleCVButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 238</value>
-  </data>
-  <data name="firstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 128</value>
-  </data>
-  <data name="&gt;&gt;firstNameLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;educationLabel.Name" xml:space="preserve">
-    <value>educationLabel</value>
-  </data>
-  <data name="languageLabel.Text" xml:space="preserve">
-    <value>Select CV language:</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 549</value>
-  </data>
-  <data name="createSampleCVButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="experienceLabel.Text" xml:space="preserve">
-    <value>Experience:</value>
-  </data>
-  <data name="&gt;&gt;lastNameTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="skillsTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;skillsLabel.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="&gt;&gt;createSampleCVButton.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>470, 165</value>
-  </data>
-  <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lastNameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;createCVGroupBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lastNameLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;educationTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;experienceTextBox.Name" xml:space="preserve">
-    <value>experienceTextBox</value>
-  </data>
-  <data name="skillsTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 23</value>
-  </data>
-  <data name="&gt;&gt;skillsTextBox.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;createSampleCVButton.Name" xml:space="preserve">
-    <value>createSampleCVButton</value>
-  </data>
-  <data name="&gt;&gt;educationTextBox.Name" xml:space="preserve">
-    <value>educationTextBox</value>
-  </data>
-  <data name="&gt;&gt;skillsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="experienceTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>473, 128</value>
-  </data>
-  <data name="educationTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="skillsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 15</value>
-  </data>
-  <data name="educationLabel.Text" xml:space="preserve">
-    <value>Education:</value>
-  </data>
-  <data name="firstNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="firstNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 15</value>
-  </data>
-  <data name="infoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 20</value>
-  </data>
-  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="infoLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lastNameLabel.Text" xml:space="preserve">
-    <value>Last Name:</value>
-  </data>
-  <data name="&gt;&gt;experienceLabel.Name" xml:space="preserve">
-    <value>experienceLabel</value>
-  </data>
-  <data name="firstNameLabel.Text" xml:space="preserve">
-    <value>First Name:</value>
-  </data>
-  <data name="lastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 162</value>
-  </data>
-  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
-    <value>languageLabel</value>
-  </data>
-  <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 15</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>UC_Home</value>
-  </data>
-  <data name="lastNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>473, 183</value>
+    <value>Nombre de familia</value>
   </data>
   <data name="languageComboBox.Items" xml:space="preserve">
     <value>English</value>
   </data>
-  <data name="skillsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;skillsLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;lastNameTextBox.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
+  <data name="createCVGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 99</value>
   </data>
-  <data name="&gt;&gt;infoLabel.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="infoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 59</value>
-  </data>
-  <data name="educationLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 15</value>
+  <data name="&gt;&gt;educationTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 180</value>
   </data>
+  <data name="educationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 15</value>
+  </data>
+  <data name="&gt;&gt;experienceTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="educationTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="educationLabel.Text" xml:space="preserve">
+    <value>Educación:</value>
+  </data>
+  <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;educationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;welcomeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="skillsLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>257, 162</value>
   </data>
-  <data name="&gt;&gt;firstNameLabel.Parent" xml:space="preserve">
-    <value>createCVGroupBox</value>
-  </data>
-  <data name="&gt;&gt;skillsTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="createCVGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;infoLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UC_Home</value>
+  </data>
+  <data name="&gt;&gt;createCVGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 549</value>
+  </data>
+  <data name="lastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 162</value>
+  </data>
+  <data name="welcomeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="createSampleCVButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="&gt;&gt;lastNameLabel.Parent" xml:space="preserve">
     <value>createCVGroupBox</value>
   </data>
-  <data name="skillsLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;lastNameLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextBox.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="welcomeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;experienceLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="experienceLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="educationLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="createCVGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 305</value>
   </data>
-  <data name="&gt;&gt;experienceTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="experienceLabel.Text" xml:space="preserve">
+    <value>Experiencia:</value>
+  </data>
+  <data name="&gt;&gt;firstNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
+    <value>languageLabel</value>
   </data>
   <data name="&gt;&gt;skillsTextBox.Name" xml:space="preserve">
     <value>skillsTextBox</value>
   </data>
-  <data name="&gt;&gt;createSampleCVButton.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="createSampleCVButton.Text" xml:space="preserve">
+    <value>Crear CV de muestra</value>
   </data>
-  <data name="skillsLabel.Text" xml:space="preserve">
-    <value>Skills:</value>
+  <data name="infoLabel.Text" xml:space="preserve">
+    <value>Por favor ingrese su información a continuación:</value>
+  </data>
+  <data name="&gt;&gt;createCVGroupBox.Name" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="experienceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="welcomeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 56</value>
+  </data>
+  <data name="welcomeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="firstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 23</value>
+  </data>
+  <data name="skillsTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 23</value>
+  </data>
+  <data name="educationTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 23</value>
+  </data>
+  <data name="createCVGroupBox.Text" xml:space="preserve">
+    <value>Crear CV de muestra</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="languageLabel.Text" xml:space="preserve">
+    <value>Seleccionar idioma del CV:</value>
+  </data>
+  <data name="&gt;&gt;skillsLabel.Name" xml:space="preserve">
+    <value>skillsLabel</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="lastNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
+    <value>languageComboBox</value>
+  </data>
+  <data name="lastNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="infoLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;createSampleCVButton.Name" xml:space="preserve">
+    <value>createSampleCVButton</value>
+  </data>
+  <data name="&gt;&gt;firstNameLabel.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="&gt;&gt;experienceTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="experienceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 15</value>
+  </data>
+  <data name="createCVGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="infoLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="welcomeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 29</value>
+  </data>
+  <data name="&gt;&gt;experienceTextBox.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="skillsTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="skillsTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 183</value>
+  </data>
+  <data name="infoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 20</value>
+  </data>
+  <data name="experienceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 23</value>
   </data>
   <data name="&gt;&gt;createCVGroupBox.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;infoLabel.Name" xml:space="preserve">
-    <value>infoLabel</value>
+  <data name="skillsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="firstNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 106</value>
+  <data name="lastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 23</value>
   </data>
-  <data name="firstNameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;educationTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;createSampleCVButton.Parent" xml:space="preserve">
     <value>createCVGroupBox</value>
   </data>
   <data name="&gt;&gt;educationTextBox.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="skillsTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 183</value>
+  <data name="&gt;&gt;firstNameLabel.Name" xml:space="preserve">
+    <value>firstNameLabel</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="createSampleCVButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;skillsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="educationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 106</value>
+  </data>
+  <data name="experienceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 106</value>
+  </data>
+  <data name="&gt;&gt;createCVGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;skillsTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="infoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;infoLabel.Name" xml:space="preserve">
+    <value>infoLabel</value>
+  </data>
+  <data name="&gt;&gt;experienceLabel.Name" xml:space="preserve">
+    <value>experienceLabel</value>
+  </data>
+  <data name="&gt;&gt;educationTextBox.Name" xml:space="preserve">
+    <value>educationTextBox</value>
+  </data>
+  <data name="firstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 128</value>
+  </data>
+  <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 165</value>
+  </data>
+  <data name="welcomeLabel.Text" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
+  <data name="skillsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 15</value>
+  </data>
+  <data name="&gt;&gt;lastNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.Name" xml:space="preserve">
+    <value>lastNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;firstNameLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;educationLabel.Name" xml:space="preserve">
+    <value>educationLabel</value>
+  </data>
+  <data name="&gt;&gt;educationLabel.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="skillsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="firstNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;welcomeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="createSampleCVButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 238</value>
+  </data>
+  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 183</value>
+  </data>
+  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 23</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="skillsLabel.Text" xml:space="preserve">
+    <value>Habilidades:</value>
+  </data>
+  <data name="&gt;&gt;lastNameLabel.Name" xml:space="preserve">
+    <value>lastNameLabel</value>
+  </data>
+  <data name="&gt;&gt;skillsTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="experienceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;skillsTextBox.Parent" xml:space="preserve">
     <value>createCVGroupBox</value>
   </data>
-  <data name="&gt;&gt;firstNameTextBox.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;createSampleCVButton.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="educationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="firstNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 106</value>
+  </data>
+  <data name="educationTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 128</value>
+  </data>
+  <data name="firstNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="infoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 59</value>
+  </data>
+  <data name="&gt;&gt;experienceLabel.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 15</value>
+  </data>
+  <data name="&gt;&gt;experienceTextBox.Name" xml:space="preserve">
+    <value>experienceTextBox</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextBox.Name" xml:space="preserve">
+    <value>firstNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.Parent" xml:space="preserve">
+    <value>createCVGroupBox</value>
+  </data>
+  <data name="firstNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 15</value>
+  </data>
+  <data name="lastNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;welcomeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createSampleCVButton.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 15</value>
+  </data>
+  <data name="createSampleCVButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 31</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es</value>
+    <value>en</value>
   </metadata>
 </root>

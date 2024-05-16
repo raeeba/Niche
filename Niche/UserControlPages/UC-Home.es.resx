@@ -117,53 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="createSampleCVButton.Text" xml:space="preserve">
-    <value>Crear CV de muestra</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="infoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 20</value>
+  <data name="welcomeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 29</value>
   </data>
-  <data name="infoLabel.Text" xml:space="preserve">
-    <value>Por favor ingrese su información a continuación:</value>
-  </data>
-  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 15</value>
-  </data>
-  <data name="languageLabel.Text" xml:space="preserve">
-    <value>Seleccionar idioma del CV:</value>
-  </data>
-  <data name="experienceLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 15</value>
-  </data>
-  <data name="experienceLabel.Text" xml:space="preserve">
-    <value>Experiencia:</value>
-  </data>
-  <data name="skillsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 15</value>
-  </data>
-  <data name="skillsLabel.Text" xml:space="preserve">
-    <value>Habilidades:</value>
-  </data>
-  <data name="educationLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 15</value>
-  </data>
-  <data name="educationLabel.Text" xml:space="preserve">
-    <value>Educación:</value>
-  </data>
-  <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 15</value>
-  </data>
-  <data name="lastNameLabel.Text" xml:space="preserve">
-    <value>Nombre de familia</value>
-  </data>
-  <data name="firstNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 15</value>
-  </data>
-  <data name="firstNameLabel.Text" xml:space="preserve">
-    <value>Nombre de pila:</value>
-  </data>
-  <data name="createCVGroupBox.Text" xml:space="preserve">
-    <value>Crear CV de muestra</value>
+  <data name="welcomeLabel.Text" xml:space="preserve">
+    <value>¡Bienvenido!</value>
   </data>
 </root>

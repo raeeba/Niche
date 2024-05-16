@@ -117,4 +117,114 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="descrLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="copyLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="aboutLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="descrLabel.Text" xml:space="preserve">
+    <value>'Niche' aims to provide an array of remote jobs in different industries to its users. We hope 'Niche' can help increase the range of job opportunities for its users.</value>
+  </data>
+  <data name="&gt;&gt;descrLabel.Name" xml:space="preserve">
+    <value>descrLabel</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UC_About</value>
+  </data>
+  <data name="aboutLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 20</value>
+  </data>
+  <data name="descrLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 270</value>
+  </data>
+  <data name="&gt;&gt;copyLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="descrLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 58</value>
+  </data>
+  <data name="descrLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 549</value>
+  </data>
+  <data name="copyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 495</value>
+  </data>
+  <data name="&gt;&gt;descrLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;aboutLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;copyLabel.Name" xml:space="preserve">
+    <value>copyLabel</value>
+  </data>
+  <data name="&gt;&gt;aboutLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="descrLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="copyLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;aboutLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;copyLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="aboutLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;descrLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="aboutLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 24</value>
+  </data>
+  <data name="copyLabel.Text" xml:space="preserve">
+    <value>Niche by Raeeba Rahman &amp; Janna Lomibao, 2024.</value>
+  </data>
+  <data name="copyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 15</value>
+  </data>
+  <data name="&gt;&gt;descrLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;copyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aboutLabel.Name" xml:space="preserve">
+    <value>aboutLabel</value>
+  </data>
+  <data name="aboutLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="aboutLabel.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="copyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es</value>
+  </metadata>
 </root>

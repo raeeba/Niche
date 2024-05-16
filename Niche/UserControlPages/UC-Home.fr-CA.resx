@@ -148,6 +148,9 @@
   <data name="skillsLabel.Text" xml:space="preserve">
     <value>Compétences:</value>
   </data>
+  <data name="educationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 15</value>
+  </data>
   <data name="educationLabel.Text" xml:space="preserve">
     <value>Éducation:</value>
   </data>
@@ -162,5 +165,11 @@
   </data>
   <data name="firstNameLabel.Text" xml:space="preserve">
     <value>Prénom:</value>
+  </data>
+  <data name="welcomeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 29</value>
+  </data>
+  <data name="welcomeLabel.Text" xml:space="preserve">
+    <value>Bienvenue!</value>
   </data>
 </root>

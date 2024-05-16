@@ -168,3 +168,16 @@ C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Nic
 C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.exe
 C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.pdb
 C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.HomeForm.en-CA.resources
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_About.es.resources
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_About.fr-CA.resources
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Login.en.resources
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Login.es.resources
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Login.fr-CA.resources
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Login.fr.resources
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\bin\Debug\bin-NG\Niche.resources.dll
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\bin\Debug\bin\Niche.resources.dll
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Login.bin-NG.resources
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Login.bin.resources
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\bin-NG\Niche.resources.dll
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\bin\Niche.resources.dll
+C:\Users\Labib\Dropbox\My PC (DESKTOP-L554P2E)\Documents\APP DEV\FINAL FINAL\Niche\Niche\obj\Debug\Niche.UserControlPages.UC_Home.en.resources

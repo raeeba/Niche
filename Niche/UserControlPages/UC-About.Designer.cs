@@ -28,18 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_About));
+            this.aboutLabel = new System.Windows.Forms.Label();
+            this.descrLabel = new System.Windows.Forms.Label();
+            this.copyLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // aboutLabel
+            // 
+            resources.ApplyResources(this.aboutLabel, "aboutLabel");
+            this.aboutLabel.Name = "aboutLabel";
+            // 
+            // descrLabel
+            // 
+            resources.ApplyResources(this.descrLabel, "descrLabel");
+            this.descrLabel.Name = "descrLabel";
+            // 
+            // copyLabel
+            // 
+            resources.ApplyResources(this.copyLabel, "copyLabel");
+            this.copyLabel.Name = "copyLabel";
             // 
             // UC_About
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.copyLabel);
+            this.Controls.Add(this.descrLabel);
+            this.Controls.Add(this.aboutLabel);
             this.Name = "UC_About";
-            this.Size = new System.Drawing.Size(769, 549);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label aboutLabel;
+        private System.Windows.Forms.Label descrLabel;
+        private System.Windows.Forms.Label copyLabel;
     }
 }

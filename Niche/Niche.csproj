@@ -158,8 +158,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlPages\UC-About.es.resx">
+      <DependentUpon>UC-About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPages\UC-About.fr-CA.resx">
+      <DependentUpon>UC-About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlPages\UC-About.resx">
       <DependentUpon>UC-About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPages\UC-Home.en.resx">
+      <DependentUpon>UC-Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlPages\UC-Home.es.resx">
       <DependentUpon>UC-Home.cs</DependentUpon>
@@ -190,6 +199,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlPages\UC-Library.resx">
       <DependentUpon>UC-Library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPages\UC-Login.bin-NG.resx">
+      <DependentUpon>UC-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPages\UC-Login.bin.resx">
+      <DependentUpon>UC-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPages\UC-Login.en.resx">
+      <DependentUpon>UC-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPages\UC-Login.es.resx">
+      <DependentUpon>UC-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPages\UC-Login.fr-CA.resx">
+      <DependentUpon>UC-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPages\UC-Login.fr.resx">
+      <DependentUpon>UC-Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlPages\UC-Login.resx">
       <DependentUpon>UC-Login.cs</DependentUpon>

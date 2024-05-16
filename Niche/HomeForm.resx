@@ -137,4 +137,390 @@
         AElFTkSuQmCC
 </value>
   </data>
+  <data name="loginRegisterBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="loginRegisterBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 96</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="loginRegisterBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loginRegisterBtn.Name" xml:space="preserve">
+    <value>loginRegisterBtn</value>
+  </data>
+  <data name="&gt;&gt;loginRegisterBtn.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ImageButton, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;loginRegisterBtn.Parent" xml:space="preserve">
+    <value>navPanel</value>
+  </data>
+  <data name="&gt;&gt;loginRegisterBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="homeBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="homeBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 105</value>
+  </data>
+  <data name="homeBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 60</value>
+  </data>
+  <data name="homeBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="homeBtn.Text" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="&gt;&gt;homeBtn.Name" xml:space="preserve">
+    <value>homeBtn</value>
+  </data>
+  <data name="&gt;&gt;homeBtn.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;homeBtn.Parent" xml:space="preserve">
+    <value>navPanel</value>
+  </data>
+  <data name="&gt;&gt;homeBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="jobsBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="jobsBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 171</value>
+  </data>
+  <data name="jobsBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 60</value>
+  </data>
+  <data name="jobsBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="jobsBtn.Text" xml:space="preserve">
+    <value>JOBS</value>
+  </data>
+  <data name="&gt;&gt;jobsBtn.Name" xml:space="preserve">
+    <value>jobsBtn</value>
+  </data>
+  <data name="&gt;&gt;jobsBtn.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;jobsBtn.Parent" xml:space="preserve">
+    <value>navPanel</value>
+  </data>
+  <data name="&gt;&gt;jobsBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="testimoniesBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="testimoniesBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 237</value>
+  </data>
+  <data name="testimoniesBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 60</value>
+  </data>
+  <data name="testimoniesBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="testimoniesBtn.Text" xml:space="preserve">
+    <value>TESTIMONIALS</value>
+  </data>
+  <data name="&gt;&gt;testimoniesBtn.Name" xml:space="preserve">
+    <value>testimoniesBtn</value>
+  </data>
+  <data name="&gt;&gt;testimoniesBtn.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;testimoniesBtn.Parent" xml:space="preserve">
+    <value>navPanel</value>
+  </data>
+  <data name="&gt;&gt;testimoniesBtn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="libraryBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="libraryBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 303</value>
+  </data>
+  <data name="libraryBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 60</value>
+  </data>
+  <data name="libraryBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="libraryBtn.Text" xml:space="preserve">
+    <value>LIBRARY</value>
+  </data>
+  <data name="&gt;&gt;libraryBtn.Name" xml:space="preserve">
+    <value>libraryBtn</value>
+  </data>
+  <data name="&gt;&gt;libraryBtn.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;libraryBtn.Parent" xml:space="preserve">
+    <value>navPanel</value>
+  </data>
+  <data name="&gt;&gt;libraryBtn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="aboutBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="aboutBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 369</value>
+  </data>
+  <data name="aboutBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 60</value>
+  </data>
+  <data name="aboutBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="aboutBtn.Text" xml:space="preserve">
+    <value>ABOUT</value>
+  </data>
+  <data name="&gt;&gt;aboutBtn.Name" xml:space="preserve">
+    <value>aboutBtn</value>
+  </data>
+  <data name="&gt;&gt;aboutBtn.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;aboutBtn.Parent" xml:space="preserve">
+    <value>navPanel</value>
+  </data>
+  <data name="&gt;&gt;aboutBtn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="navPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 38</value>
+  </data>
+  <data name="navPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 568</value>
+  </data>
+  <data name="navPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;navPanel.Name" xml:space="preserve">
+    <value>navPanel</value>
+  </data>
+  <data name="&gt;&gt;navPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;navPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;navPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="headerLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tw Cen MT Condensed, 14.25pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="headerLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="headerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 0</value>
+  </data>
+  <data name="headerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 41</value>
+  </data>
+  <data name="headerLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="headerLabel.Text" xml:space="preserve">
+    <value>NICHE</value>
+  </data>
+  <data name="headerLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;headerLabel.Name" xml:space="preserve">
+    <value>headerLabel</value>
+  </data>
+  <data name="&gt;&gt;headerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;headerLabel.Parent" xml:space="preserve">
+    <value>upperPanel</value>
+  </data>
+  <data name="&gt;&gt;headerLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 38</value>
+  </data>
+  <data name="panelContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 558</value>
+  </data>
+  <data name="panelContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelContainer.Name" xml:space="preserve">
+    <value>panelContainer</value>
+  </data>
+  <data name="&gt;&gt;panelContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelContainer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="themeToggleSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 10</value>
+  </data>
+  <data name="themeToggleSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 20</value>
+  </data>
+  <data name="themeToggleSwitch.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;themeToggleSwitch.Name" xml:space="preserve">
+    <value>themeToggleSwitch</value>
+  </data>
+  <data name="&gt;&gt;themeToggleSwitch.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ToggleSwitch, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;themeToggleSwitch.Parent" xml:space="preserve">
+    <value>upperPanel</value>
+  </data>
+  <data name="&gt;&gt;themeToggleSwitch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="languageComboBox.Items" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="languageComboBox.Items1" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="languageComboBox.Items2" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, 12</value>
+  </data>
+  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
+    <value>languageComboBox</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
+    <value>upperPanel</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="upperPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="upperPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="upperPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>971, 41</value>
+  </data>
+  <data name="upperPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;upperPanel.Name" xml:space="preserve">
+    <value>upperPanel</value>
+  </data>
+  <data name="&gt;&gt;upperPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;upperPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;upperPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="footerLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="footerLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tw Cen MT Condensed, 9.75pt, style=Bold</value>
+  </data>
+  <data name="footerLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="footerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 5</value>
+  </data>
+  <data name="footerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 15</value>
+  </data>
+  <data name="footerLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="footerLabel.Text" xml:space="preserve">
+    <value>2024 Niche</value>
+  </data>
+  <data name="&gt;&gt;footerLabel.Name" xml:space="preserve">
+    <value>footerLabel</value>
+  </data>
+  <data name="&gt;&gt;footerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;footerLabel.Parent" xml:space="preserve">
+    <value>footerPanel</value>
+  </data>
+  <data name="&gt;&gt;footerLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="footerPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="footerPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 589</value>
+  </data>
+  <data name="footerPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>971, 29</value>
+  </data>
+  <data name="footerPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;footerPanel.Name" xml:space="preserve">
+    <value>footerPanel</value>
+  </data>
+  <data name="&gt;&gt;footerPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;footerPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;footerPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>971, 618</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>HomeForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

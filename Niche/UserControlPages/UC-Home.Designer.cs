@@ -44,6 +44,7 @@
             this.educationTextBox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.firstNameTextBox = new System.Windows.Forms.TextBox();
+            this.welcomeLabel = new System.Windows.Forms.Label();
             this.createCVGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,15 +151,22 @@
             resources.ApplyResources(this.firstNameTextBox, "firstNameTextBox");
             this.firstNameTextBox.Name = "firstNameTextBox";
             // 
+            // welcomeLabel
+            // 
+            resources.ApplyResources(this.welcomeLabel, "welcomeLabel");
+            this.welcomeLabel.Name = "welcomeLabel";
+            // 
             // UC_Home
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.createCVGroupBox);
             this.Name = "UC_Home";
             this.createCVGroupBox.ResumeLayout(false);
             this.createCVGroupBox.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -179,5 +187,6 @@
         private System.Windows.Forms.TextBox experienceTextBox;
         private System.Windows.Forms.Label experienceLabel;
         private System.Windows.Forms.Label infoLabel;
+        private System.Windows.Forms.Label welcomeLabel;
     }
 }

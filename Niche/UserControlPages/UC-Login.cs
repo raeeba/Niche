@@ -28,8 +28,6 @@ namespace Niche.UserControlPages
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            //this.usersTableAdapter.Login(this.usersDataSet.Users, usernameTextbox.Text, passwordTextBox.Text);
-            //MessageBox.Show("Welcome " + usernameTextbox.Text);
             String Username, Password;
 
             Username= usernameTextbox.Text;
@@ -52,9 +50,9 @@ namespace Niche.UserControlPages
                     UC_Home uC_Home = new UC_Home();
                     uC_Home.Show();
                     this.Hide();
-                    /*HomeForm home = new HomeForm();
-                    home.addUserControl(uC_Home);
-                    this.Hide();*/
+                    //HomeForm home = new HomeForm();
+                    //home.addUserControl(uC_Home);
+                    //this.Hide();
                 }
                 else
                 {
