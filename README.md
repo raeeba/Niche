@@ -6,7 +6,7 @@ Niche is a remote job-searching application, similar to Indeed or LinkedIn, that
 Following the increase of 'work-from-home' practices after the pandemic, many people are prioritizing looking for remote job opportunities. Niche aims to help users find and secure these jobs. 
 This project aims to solve various problems related to working in an office such as decreasing someone’s cost of living as people tend to move to cities for job opportunities, promoting work-life balance, and increasing the range of job opportunities.
 
-**Sources:**
+#### Sources
 *(The following resources were used in the application.)* 
 
 Articles:
