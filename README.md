@@ -1,7 +1,6 @@
 # Niche
 *(This is a final project created for the 420-331-VA Application Development 1 course.)* 
 
-**Summary**
 Niche is a remote job-searching application, similar to Indeed or LinkedIn, that provides users with a list of jobs in different industries. 
 
 Following the increase of 'work-from-home' practices after the pandemic, many people are prioritizing looking for remote job opportunities. Niche aims to help users find and secure these jobs. 
